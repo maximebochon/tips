@@ -1,1 +1,5 @@
-# Command line and programming tips and tricks.
+# Command line and programming tips and tricks
+
+- [Linux](linux.md)
+
+- [Windows](windows.md)
