@@ -3,3 +3,5 @@
 - [Linux](linux.md)
 
 - [Windows](windows.md)
+
+- [Oracle](oracle.md)
