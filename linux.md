@@ -1,6 +1,6 @@
 # Linux tips
 
-Create a compressed archive AND remove archived files in one command:
+Create a compressed archive **and** remove archived files **in one** command line:
 ```sh
 tar --remove-files -czf archive.tar.gz *.ext
 ```
