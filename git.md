@@ -23,6 +23,11 @@ Create a new branch and switch to it:
 git checkout -b <new_branch>
 ```
 
+Rename current local branch:
+```sh
+git branch -m <new_branch_name>
+```
+
 Delete a local branch:
 ```sh
 git branch -D <existing_local_branch>
