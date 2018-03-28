@@ -49,3 +49,9 @@ Reset the state of a file:
 ```sh
 git checkout -- <file>
 ```
+
+Reset the state of a branch:
+```sh
+git checkout <branch>
+git reset --hard origin/<branch>
+```
