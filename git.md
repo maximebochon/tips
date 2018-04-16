@@ -55,3 +55,38 @@ Reset the state of a branch:
 git checkout <branch>
 git reset --hard origin/<branch>
 ```
+
+Put aside current changes for later use (called _stash_):
+```
+git stash push -m "<description>"
+```
+
+List stash entries:
+```
+git stash list
+```
+
+Show a stash as a patch:
+```
+git stash show -p <stash index>
+```
+
+Apply a stash:
+```
+git stash apply <stash index>
+```
+
+Remove a stash:
+```
+git stash drop <stash index>
+```
+
+Apply and remove a stash at the same time:
+```
+git stash pop <stash index>
+```
+
+Put aside changes for some files only:
+```
+git stash push -m "<description>" -p <file 1> <file 2> ... <file N>
+```
