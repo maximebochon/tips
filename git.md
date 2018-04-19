@@ -33,6 +33,11 @@ Delete a local branch:
 git branch -D <existing_local_branch>
 ```
 
+Push new branch to remote repository:
+```sh
+git push -u origin <local_branch>
+```
+
 Create a patch, check it, apply it:
 ```sh
 git diff <commit_A> <commit_B> > diff_fromA_toB.patch
