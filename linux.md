@@ -30,3 +30,22 @@ which mvn
 readlink -f $(which mvn)
 -- /usr/local/apache-maven-3.2.5/bin/mvn
 ```
+
+List all files containing some text:
+```sh
+find . -type f -exec grep -H <some_text> {} \; 2>/dev/null | cut -d':' -f1 | sort -u
+```
+Explanation:
+```sh
+# Find all files recursively in current directory.
+find . -type f \
+# For each file, search for <some_text> and format
+# results this way: <file_name>:<matched_line>
+-exec grep -H <some_text> {} \; \
+# Ignore permission issues.
+2>/dev/null \
+# Filter on file names.
+| cut -d':' -f1 \
+# Remove duplicates (and sort).
+| sort -u
+```
