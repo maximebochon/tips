@@ -1,11 +1,11 @@
 # Linux tips
 
-Create a compressed archive **and** remove archived files **in one** command line:
+:open_file_folder: Create a compressed archive **and** remove archived files **in one** command line:
 ```sh
 tar --remove-files -czf archive.tar.gz *.ext
 ```
 
-Display the result of a command and update/refresh it every *S* seconds:
+:arrows_counterclockwise: Display the result of a command and update/refresh it every *S* seconds:
 ```
 S=1;             # update period, in seconds
 while [ 1 ];
@@ -19,7 +19,7 @@ Works well as a one-liner too:
 while [ 1 ]; do tput clear; date; sleep 1; done
 ```
 
-Display the absolute path to an executable command *cmd*:
+:link: Display the absolute path to an executable command *cmd*:
 ```sh
 readlink -f $(which $cmd)
 ```
@@ -31,7 +31,7 @@ readlink -f $(which mvn)
 -- /usr/local/apache-maven-3.2.5/bin/mvn
 ```
 
-List all files containing some text:
+:mag: List all files containing some text:
 ```sh
 find . -type f -exec grep -H <some_text> {} \; 2>/dev/null | cut -d':' -f1 | sort -u
 ```
