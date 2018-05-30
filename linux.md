@@ -5,6 +5,8 @@
 tar --remove-files -czf archive.tar.gz *.ext
 ```
 
+&nbsp;
+
 :arrows_counterclockwise: Display the result of a command and update/refresh it every *S* seconds:
 ```
 S=1;             # update period, in seconds
@@ -19,6 +21,8 @@ Works well as a one-liner too:
 while [ 1 ]; do tput clear; date; sleep 1; done
 ```
 
+&nbsp;
+
 :link: Display the absolute path to an executable command *cmd*:
 ```sh
 readlink -f $(which $cmd)
@@ -30,6 +34,8 @@ which mvn
 readlink -f $(which mvn)
 -- /usr/local/apache-maven-3.2.5/bin/mvn
 ```
+
+&nbsp;
 
 :mag: List all files containing some text:
 ```sh
