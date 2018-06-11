@@ -5,7 +5,12 @@ Commit routine:
 git status
 git add ...
 git status
-git commit -m "<commit_description>"
+git commit -m "<commit_message>"
+```
+
+Fix last commit message:
+```sh
+git commit --amend -m "<new_commit_message>"
 ```
 
 List branches:
