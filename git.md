@@ -100,3 +100,9 @@ Put aside changes for some files only:
 ```
 git stash push -m "<description>" -p <file 1> <file 2> ... <file N>
 ```
+
+Revert up to some specific commit and loose intermediate history (does not work on a protected branch):
+```
+git reset --hard <commit>
+git push origin HEAD --force
+```
