@@ -55,3 +55,13 @@ find . -type f \
 # Remove duplicates (and sort).
 | sort -u
 ```
+
+&nbsp;
+
+:bookmark_tabs: Find some expression in a file and display surrounding lines:
+```sh
+grep -B 2 -A 5 $some_expression $file
+# display lines where the expression was found
+# surrounded with 2 previous lines (B = before)
+# and 5 following lines (A = after)
+```
