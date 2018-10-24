@@ -75,9 +75,6 @@ grep -B 2 -A 5 $some_expression $file
 for x in a b a c b b b a c a c a a b a; do
   echo $x | sed -e 's/a/Apple/' -e 's/b/Banana/' -e 's/c/Cherry/'
 done > list
-```
-```sh
-# Check list file
 
 head -5 list
 # Apple
@@ -90,7 +87,7 @@ wc -l list
 # 15
 ```
 ```sh
-# Group and count occurrences:
+# Group and count occurrences
 
 cat list | sort | uniq -c
 #      7 Apple
