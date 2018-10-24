@@ -65,3 +65,35 @@ grep -B 2 -A 5 $some_expression $file
 # surrounded with 2 previous lines (B = before)
 # and 5 following lines (A = after)
 ```
+
+&nbsp;
+
+:bar_chart: Group and count text occurrences:
+```sh
+# Create a list of occurrences
+
+for x in a b a c b b b a c a c a a b a; do
+  echo $x | sed -e 's/a/Apple/' -e 's/b/Banana/' -e 's/c/Cherry/'
+done > list
+```
+```sh
+# Check list file
+
+head -5 list
+# Apple
+# Banana
+# Apple
+# Cherry
+# Banana
+
+wc -l list
+# 15
+```
+```sh
+# Group and count occurrences:
+
+cat list | sort | uniq -c
+#      7 Apple
+#      5 Banana
+#      3 Cherry
+```
