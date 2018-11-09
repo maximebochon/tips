@@ -13,6 +13,11 @@ Fix last commit message:
 git commit --amend -m "<new_commit_message>"
 ```
 
+Undo last commit:
+```sh
+git reset HEAD~1
+```
+
 List branches:
 ```sh
 git branch
