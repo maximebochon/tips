@@ -94,3 +94,23 @@ cat list | sort | uniq -c
 #      5 Banana
 #      3 Cherry
 ```
+
+&nbsp;
+
+:1234: Compute basic metrics on a list of integers:
+```sh
+# Let's consider a file named 'unsorted-integers'
+# containing unsorted integers (one integer per line).
+
+sort -n unsorted-integers > sorted-integers; INPUT="sorted-integers"
+
+echo "Min="$(head -1 $INPUT); \
+echo "Max="$(tail -1 $INPUT); \
+awk '{sum += $1} END {print "Count="NR; print"Total="sum; print "Average="sum/NR}' $INPUT
+
+# Min=2861
+# Max=110403
+# Count=206
+# Total=53591
+# Average=15609
+```
