@@ -114,3 +114,10 @@ awk '{sum += $1} END {print "Count="NR; print"Total="sum; print "Average="sum/NR
 # Total=53591
 # Average=15609
 ```
+
+&nbsp;
+
+:heavy_division_sign: Fun code to delete one file out of two (unsafe for file names with spaces):
+```sh
+for f in *.xml; do [ -f rm ] && rm -f $f && rm rm || touch rm; done; rm -f rm;
+```
