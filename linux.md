@@ -7,18 +7,18 @@ tar --remove-files -czf archive.tar.gz *.ext
 
 &nbsp;
 
-:arrows_counterclockwise: Display the result of a command and update/refresh it every *S* seconds:
-```
-S=1;             # update period, in seconds
-while [ 1 ];
-  do tput clear; # clear the content of the terminal
-  date;          # any quick command displaying information
-  sleep $S;      # wait for S seconds
+:arrows_counterclockwise: Display the result of a command and update/refresh it every *PERIOD* seconds:
+```sh
+PERIOD=2;         # update period (in seconds)
+while [ 1 ];      # infinite loop
+  do tput clear;  # clear the content of the terminal
+  date;           # any quick command displaying information
+  sleep $PERIOD;  # wait for PERIOD seconds
 done
 ```
 Works well as a one-liner too:
-```
-while [ 1 ]; do tput clear; date; sleep 1; done
+```sh
+while [ 1 ]; do tput clear; date; sleep 2; done
 ```
 
 &nbsp;
@@ -30,9 +30,9 @@ readlink -f $(which $cmd)
 Example:
 ```sh
 which mvn
--- /usr/bin/mvn
+# /usr/bin/mvn
 readlink -f $(which mvn)
--- /usr/local/apache-maven-3.2.5/bin/mvn
+# /usr/local/apache-maven-3.2.5/bin/mvn
 ```
 
 &nbsp;
