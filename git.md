@@ -60,6 +60,11 @@ Apply version of a file from another branch:
 git checkout <reference_branch> -- <file>
 ```
 
+Apply existing commit without commiting:
+```sh
+git cherry-pick -n <commit>
+```
+
 Reset the state of a file:
 ```sh
 git checkout -- <file>
