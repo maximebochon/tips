@@ -1,6 +1,9 @@
 # Command line and programming tips and tricks
 
-- [Linux](linux.md)
+- Linux:
+  - [CLI](linux-cli.md)
+  - [Desktop](linux-desktop.md)
+  - Multimedia
 
 - [Windows](windows.md)
 
@@ -9,3 +12,4 @@
 - [Git](git.md)
 
 - [Java](java.md)
+
