@@ -18,9 +18,9 @@ Undo last commit:
 git reset HEAD~1
 ```
 
-List branches:
+List branches by date:
 ```sh
-git branch
+git branch --sort=committerdate
 ```
 
 Switch branches:
