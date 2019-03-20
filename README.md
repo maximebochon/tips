@@ -3,7 +3,7 @@
 - Linux:
   - [CLI](linux-cli.md)
   - [Desktop](linux-desktop.md)
-  - Multimedia
+  - [Media Handling](linux-media.md)
 
 - [Windows](windows.md)
 
