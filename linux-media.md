@@ -26,3 +26,10 @@ Rename JPEG pictures based on EXIF information:
 exiftool -dateFormat %Y-%m-%d_%Hh%Mm%Ss '-Filename<Cuba.${DateTimeOriginal}_${SubSecTimeOriginal;$_.=0 x(3-length)}.${Model;tr/ /-/}.%e' *.jpg
 # example: IMG_0123.jpg --> Cuba.2019-03-12_10h55m36s722.Canon-EOS-50D.jpg
 ```
+
+&nbsp;
+
+Copy EXIF information from one picture to another:
+```sh
+exiftool -TagsFromFile source.jpg target.jpg
+```
