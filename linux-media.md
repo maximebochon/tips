@@ -40,3 +40,19 @@ Merge Matroska videos:
 ```sh
 mkvmerge -o output.mkv input1.mkv \+ input2.mkv \+ input3.mkv
 ```
+
+&nbsp;
+
+Assemble images as a mosaic using ImageMagick:
+```sh
+montage -mode concatenate -tile 4x3 *.png out.png
+```
+
+&nbsp;
+
+Assemble images as a photo board using ImageMagick:
+```sh
+montage -verbose -auto-orient -geometry 160x160+2+2 -tile 6x4 \
+        -fill 'gray' -background 'black' -title 'My Photo Board' \
+        ./photos/*.jpg board.jpg
+```
