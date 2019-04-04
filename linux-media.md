@@ -33,3 +33,10 @@ Copy EXIF information from one picture to another:
 ```sh
 exiftool -TagsFromFile source.jpg target.jpg
 ```
+
+&nbsp;
+
+Merge Matroska videos:
+```sh
+mkvmerge -o output.mkv input1.mkv \+ input2.mkv \+ input3.mkv
+```
