@@ -43,10 +43,20 @@ mkvmerge -o output.mkv input1.mkv \+ input2.mkv \+ input3.mkv
 
 &nbsp;
 
-Reencode a JPEG image to change its quality:
+Reencode a JPEG image to change its quality using ImageMagick:
 ```sh
 convert input.jpg -quality $quality output.jpg 
 # quality from 1 to 100
+```
+
+&nbsp;
+
+Resize image using ImgeMagick:
+```sh
+convert $input -resize ${width} $output
+convert $input -resize x${height} $output
+convert $input -resize ${percentage}% $output
+convert $input -resize ${width}x${height} $output
 ```
 
 &nbsp;
