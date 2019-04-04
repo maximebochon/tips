@@ -43,6 +43,14 @@ mkvmerge -o output.mkv input1.mkv \+ input2.mkv \+ input3.mkv
 
 &nbsp;
 
+Reencode a JPEG image to change its quality:
+```sh
+convert input.jpg -quality $quality output.jpg 
+# quality from 1 to 100
+```
+
+&nbsp;
+
 Assemble images as a mosaic using ImageMagick:
 ```sh
 montage -mode concatenate -tile 4x3 *.png out.png
