@@ -8,7 +8,7 @@ net statistics workstation
 
 &nbsp;
 
-:arrow_forward: Launch programs at start-up:
+:arrow_forward: Launch programs at start-up (Windows 7 and above):
 - open the start-up directory by running (`WIN+R`):
   - `shell:startup` for personal use
   - `shell:common startup` for common use
@@ -16,7 +16,7 @@ net statistics workstation
 
 &nbsp;
 
-Get the shortcut of an application pinned in the taskbar:
-- type `WIN+R` and run `shell:User Pinned`
+Get the shortcut of an application pinned in the taskbar (Windows 7 and above):
+- type `WIN+R` and run `shell:user pinned`
 - enter the `TaskBar` directory
 - it should contain shortcuts to these applications
