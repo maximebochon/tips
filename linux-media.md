@@ -87,3 +87,10 @@ montage -verbose -auto-orient -geometry 160x160+2+2 -tile 6x4 \
         -fill 'gray' -background 'black' -title 'My Photo Board' \
         ./photos/*.jpg board.jpg
 ```
+
+Convert a multi-page PDF document to PNG images using [GhostScript](https://www.ghostscript.com/):
+```sh
+gs -sDEVICE=png16m -r600 -dDownScaleFactor=3 \
+   -dTextAlphaBits=4 -dGraphicsAlphaBits=4 \
+   -o ${output}.%d.png ${input}Facture.pdf
+```
