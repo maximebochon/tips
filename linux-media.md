@@ -88,9 +88,11 @@ montage -verbose -auto-orient -geometry 160x160+2+2 -tile 6x4 \
         ./photos/*.jpg board.jpg
 ```
 
-Convert a multi-page PDF document to PNG images using [GhostScript](https://www.ghostscript.com/):
+&nbsp;
+
+Render a multi-page [PDF](https://en.wikipedia.org/wiki/PDF) document to high-quality [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics) images using [GhostScript](https://www.ghostscript.com/):
 ```sh
-gs -sDEVICE=png16m -r600 -dDownScaleFactor=3 \
-   -dTextAlphaBits=4 -dGraphicsAlphaBits=4 \
-   -o ${output}.%d.png ${input}Facture.pdf
+gs -sDEVICE=png16m -r600 -dDownScaleFactor=3 \   # 600/3 = 200 DPI (adjust to your need)
+   -dTextAlphaBits=4 -dGraphicsAlphaBits=4 \     # best anti-aliasing setting in GhostScript
+   -o ${output}.%d.png ${input}.pdf              # page number is part of the output file name
 ```
