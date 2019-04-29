@@ -99,7 +99,15 @@ gs -sDEVICE=png16m -r600 -dDownScaleFactor=3 \   # 600/3 = 200 DPI (adjust to yo
 
 &nbsp;
 
-Combine multiple size [PNG](https://en.wikipedia.org/wiki/PDF) images into one [icon file](https://en.wikipedia.org/wiki/ICO_%28file_format%29) using [ImageMagick](https://www.imagemagick.org/):
+Combine multiple size [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics) images into one [icon file](https://en.wikipedia.org/wiki/ICO_%28file_format%29) using [ImageMagick](https://www.imagemagick.org/):
 ```sh
 convert icon-{16,32,48,256}px.png icon.ico
+```
+
+&nbsp;
+
+Split a multi-page [PDF](https://en.wikipedia.org/wiki/PDF) document into multiple one-page PDF documents using [QPDF](http://qpdf.sourceforge.net/):
+```sh
+qpdf --split-pages input.pdf output-%d.pdf
+# %d is replaced with the page number
 ```
