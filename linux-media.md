@@ -96,3 +96,10 @@ gs -sDEVICE=png16m -r600 -dDownScaleFactor=3 \   # 600/3 = 200 DPI (adjust to yo
    -dTextAlphaBits=4 -dGraphicsAlphaBits=4 \     # best anti-aliasing setting in GhostScript
    -o ${output}.%d.png ${input}.pdf              # page number is part of the output file name
 ```
+
+&nbsp;
+
+Convert multiple PNG images into one icon file using ImageMagic:
+```sh
+convert icon-{16,32,64}px.png icon.ico
+```
