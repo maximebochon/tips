@@ -119,3 +119,11 @@ Extract some pages from a [PDF](https://en.wikipedia.org/wiki/PDF) document into
 qpdf --empty --pages input.pdf 2-4,7 -- output.pdf
 # extract pages 2, 3, 4, 7 from input.pdf into output.pdf
 ```
+
+&nbsp;
+
+Merge multiple [PDF](https://en.wikipedia.org/wiki/PDF) documents using [QPDF](http://qpdf.sourceforge.net/):
+```sh
+qpdf --empty --pages a.pdf b.pdf c.pdf -- abc.pdf
+# merge a.pdf, b.pdf, c.pdf into abc.pdf
+```
