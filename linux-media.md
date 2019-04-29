@@ -106,8 +106,16 @@ convert icon-{16,32,48,256}px.png icon.ico
 
 &nbsp;
 
-Split a multi-page [PDF](https://en.wikipedia.org/wiki/PDF) document into multiple one-page PDF documents using [QPDF](http://qpdf.sourceforge.net/):
+Split a multi-page [PDF](https://en.wikipedia.org/wiki/PDF) document into multiple one-page [PDF](https://en.wikipedia.org/wiki/PDF) documents using [QPDF](http://qpdf.sourceforge.net/):
 ```sh
 qpdf --split-pages input.pdf output-%d.pdf
 # %d is replaced with the page number
+```
+
+&nbsp;
+
+Extract some pages from a [PDF](https://en.wikipedia.org/wiki/PDF) document into a new [PDF](https://en.wikipedia.org/wiki/PDF) document using [QPDF](http://qpdf.sourceforge.net/):
+```sh
+qpdf --empty --pages input.pdf 2-4,7 -- output.pdf
+# extract pages 2, 3, 4, 7 from input.pdf into output.pdf
 ```
