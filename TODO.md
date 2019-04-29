@@ -4,3 +4,4 @@
 * Media tips: lossless JPEG cropping
 * qpdf --empty --pages input.pdf 2-3,7 -- output.pdf
 * qpdf --split-pages input.pdf output-%d.pdf
+* pdfsandwich
