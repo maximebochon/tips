@@ -6,3 +6,4 @@
 * Media tips: pdfsandwich
 * Media tips: choose MP3 compression bitrate and quality
 * how to install jpegtran: sudo apt install libjpeg-progs
+* Java 8 : souscriptionList.stream().anyMatch(Objects::isNull)
