@@ -1,18 +1,4 @@
-# Linux Media Handling tips
-
-Convert audio file to [Ogg](https://xiph.org/ogg/)-[Vorbis](https://xiph.org/vorbis/), [FLAC](https://xiph.org/flac/) or [LAME-MP3](http://lame.sourceforge.net/) using [SoX](http://sox.sourceforge.net/):
-```sh
-sox ${input_audio} -C ${quality} ${output_audio}.ogg
-# Ogg-Vorbis quality from -1 (worst) to 10 (best)
-
-sox ${input_audio} -C ${compression_level} ${output_audio}.flac
-# FLAC compression level from 0 (low) to 8 (high)
-
-sox ${input_audio} -C 320.0 ${output_audio}.mp3
-# LAME-MP3 constant bitrate of 320 kbps at best quality
-```
-
-&nbsp;
+# Command line image and document handling and processing tips
 
 Timeshift by one hour [EXIF](https://en.wikipedia.org/wiki/Exif) dates of [JPEG](https://jpeg.org/jpeg/) pictures using [ExifTool](http://owl.phy.queensu.ca/~phil/exiftool/):
 ```sh
@@ -33,25 +19,6 @@ exiftool -dateFormat %Y-%m-%d_%Hh%Mm%Ss '-Filename<Cuba.${DateTimeOriginal}${Sub
 Copy [EXIF](https://en.wikipedia.org/wiki/Exif) information from one picture to another using [ExifTool](http://owl.phy.queensu.ca/~phil/exiftool/):
 ```sh
 exiftool -TagsFromFile source.jpg target.jpg
-```
-
-&nbsp;
-
-Merge [Matroska](https://www.matroska.org/) videos using [MKVToolNix](https://mkvtoolnix.download/):
-```sh
-mkvmerge -o output.mkv input1.mkv \+ input2.mkv \+ input3.mkv
-```
-
-&nbsp;
-
-Apply geometric transformations to a video with relative values using [FFmpeg](https://ffmpeg.org/):
-```sh
-ffmpeg -i $input -vf "rotate=PI,crop=2/3*in_w:3/4*in_h:0:1/4*in_h" $output
-# rotate by 180 degrees and crop as follows:
-#   horizontal position: 0
-#   vertical position: 1/4 of original height
-#   new width: 2/3 of original width
-#   new height: 3/4 of original height
 ```
 
 &nbsp;

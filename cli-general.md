@@ -1,4 +1,4 @@
-# Linux CLI tips
+# General command line tips
 
 :open_file_folder: Create a compressed archive **and** remove archived files **in one** command line:
 ```sh

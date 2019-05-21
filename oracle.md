@@ -1,4 +1,4 @@
-# Oracle tips
+# Oracle notes
 
 Get current timestamp:
 ```sql

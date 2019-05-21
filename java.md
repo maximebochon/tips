@@ -1,4 +1,4 @@
-# Java
+# Java notes
 
 :sparkles:  [Awesome Java](https://github.com/akullpp/awesome-java): a curated list of awesome Java frameworks, libraries and software, by [Andreas Kull](https://github.com/akullpp).
 

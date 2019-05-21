@@ -1,15 +1,16 @@
-# Command line and programming tips and tricks
+# Tips and Tricks
 
-- Linux:
-  - [CLI](linux-cli.md)
-  - [Desktop](linux-desktop.md)
-  - [Media Handling](linux-media.md)
+## Linux command line
+- [general](cli-general.md)
+- [image](cli-image.md)
+- [audio](cli-audio.md)
+- [video](cli-video.md)
 
-- [Windows](windows.md)
-
+## Programming
+- [Git](git.md)
+- [Java](java.md)
 - [Oracle](oracle.md)
 
-- [Git](git.md)
-
-- [Java](java.md)
-
+## Operating System
+- [Windows](windows.md)
+- [Linux](linux.md)

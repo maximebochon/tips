@@ -1,4 +1,4 @@
-# Linux Desktop tips
+# Linux tips
 
 :bookmark: Remove unwanted default bookmarks in _Nautilus_:
 - edit `~/.config/user-dirs.dirs`
