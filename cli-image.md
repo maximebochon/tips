@@ -94,3 +94,11 @@ Merge multiple [PDF](https://en.wikipedia.org/wiki/PDF) documents using [QPDF](h
 qpdf --empty --pages a.pdf b.pdf c.pdf -- abc.pdf
 # merge a.pdf, b.pdf, c.pdf into abc.pdf
 ```
+
+&nbsp;
+
+Rotate some pages of a [PDF](https://en.wikipedia.org/wiki/PDF) document using [QPDF](http://qpdf.sourceforge.net/):
+```sh
+qpdf --rotate=-90:2,5 input.pdf output.pdf
+# rotate pages 2 and 5 by 90° anticlockwise
+```
