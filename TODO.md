@@ -1,7 +1,7 @@
 * Image/doc tips:
   - lossless JPEG cropping
   - lossless JPEG rotating (`jpegtran -rotate 90 -perfect input.jpg > output.jpg`)
-  - `convert -page A5 input.jpg output.pdf, convert -rotate 270 input.pdf output.pdf`
+  - `convert -page A5 input.jpg output.pdf`
   - pdfsandwich
   - how to install jpegtran: `sudo apt install libjpeg-progs`
   - `montage image{1,2,3}.png -tile 1x3 -geometry +0+0 images.png`
