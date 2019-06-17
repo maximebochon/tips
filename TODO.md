@@ -14,6 +14,7 @@
 
 * Linux tips:
   - simpler alternative command to finding text in files using grep with some options?
+  - XFCE: add type-related send-to commands in file manager
 
 * Java 8:
   - `list.stream().anyMatch(Objects::isNull)`
