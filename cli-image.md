@@ -97,7 +97,15 @@ qpdf --empty --pages a.pdf b.pdf c.pdf -- abc.pdf
 
 &nbsp;
 
-Rotate pages of a [PDF](https://en.wikipedia.org/wiki/PDF) document using [QPDF](http://qpdf.sourceforge.net/):
+Rotate all pages of a [PDF](https://en.wikipedia.org/wiki/PDF) document using [ImageMagick](https://www.imagemagick.org/):
+```sh
+convert -rotate 270 input.pdf output.pdf
+# rotate all pages by 270° clockwise
+```
+
+&nbsp;
+
+Rotate some pages of a [PDF](https://en.wikipedia.org/wiki/PDF) document using [QPDF](http://qpdf.sourceforge.net/):
 ```sh
 qpdf --rotate=-90:2,5 input.pdf output.pdf
 # rotate pages 2 and 5 by 90° anticlockwise
