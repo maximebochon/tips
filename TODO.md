@@ -5,6 +5,7 @@
   - pdfsandwich
   - how to install jpegtran: `sudo apt install libjpeg-progs`
   - `montage image{1,2,3}.png -tile 1x3 -geometry +0+0 images.png`
+  - `mogrify ... *.png`
 
 * Audio tips:
   - choose MP3 compression bitrate and quality
