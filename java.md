@@ -11,7 +11,7 @@ MyClass.class.getProtectionDomain().getCodeSource().getLocation()
 
 &nbsp;
 
-One-liner to create a list initialized with some data:
+One-liner to create a list initialized with some data (from Java 5 on):
 ```java
 List<String> list = Arrays.asList("a", "b", "c");
 ```
