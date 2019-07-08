@@ -35,7 +35,7 @@ import java.util.Map;
 import Fruit;
 import static Fruit.*;
 
-public class Converter
+public class Greengrocer
 {
    private static final Map<String, Fruit> FRUIT_MAP = ImmutableMap.of
       (
@@ -52,4 +52,73 @@ public class Converter
       // Returns null if the input is out of the mapping.
    }
 }
+```
+
+&nbsp;
+
+Use an _inner class_ when testing many repetitive unit test cases:
+
+```java
+   @Test
+   public void testManyCases()
+   {
+      class LocalTestCase {
+         boolean isOrganic;
+         String frenchFruit;
+         Fruit expectedFruit;
+
+         LocalTestCase(boolean o, String ff, Fruit ef) {
+            isOrganic = o;
+            frenchFruit = ff;
+            expectedFruit = ef;
+         }
+      }
+
+      List<LocalTestCase> testCaseList = Arrays.asList(
+         new LocalTestCase(true, "POMME",     Fruit.APPLE),
+         new LocalTestCase(true, "ORANGE",    Fruit.ORANGE),
+         new LocalTestCase(true, "BANANE",    Fruit.BANANA),
+         new LocalTestCase(true, "FRAMBOISE", Fruit.RASPBERRY),
+
+         new LocalTestCase(false, "POMME",     Fruit.APPLE),
+         new LocalTestCase(false, "ORANGE",    Fruit.ORANGE),
+         new LocalTestCase(false, "BANANE",    Fruit.BANANA),
+         new LocalTestCase(false, "FRAMBOISE", Fruit.RASPBERRY),
+
+         new LocalTestCase(true, "APPLE",     null),
+         new LocalTestCase(true, "BANANA",    null),
+         new LocalTestCase(true, "RASPBERRY", null),
+
+         new LocalTestCase(false, "APPLE",     null),
+         new LocalTestCase(false, "BANANA",    null),
+         new LocalTestCase(false, "RASPBERRY", null),
+
+         new LocalTestCase(true, "pomme",       null),
+         new LocalTestCase(true, "Orange",      null),
+         new LocalTestCase(true, " BANANE",     null),
+         new LocalTestCase(true, " FRAMBOISE ", null),
+
+         new LocalTestCase(false, "Pomme",      null),
+         new LocalTestCase(false, " ORANGE ",   null),
+         new LocalTestCase(false, "banane",     null),
+         new LocalTestCase(false, " FRAMBOISE", null),
+
+         new LocalTestCase(true, "",       null),
+         new LocalTestCase(true, " ",      null),
+         new LocalTestCase(true, "FRAISE", null),
+         new LocalTestCase(true, "P",      null),
+         new LocalTestCase(true, null,     null),
+
+         new LocalTestCase(false, "",       null),
+         new LocalTestCase(false, " ",      null),
+         new LocalTestCase(false, "CERISE", null),
+         new LocalTestCase(false, "B",      null),
+         new LocalTestCase(false, null,     null)
+      );
+
+      for (LocalTestCase testCase : testCaseList) {
+         Greengrocer g = new Greengrocer(testCase.isOrganic);
+         assertEquals(testCase.expectedFruit, g.getFruitFromFrench(testCase.frenchFruit));
+      }
+   }
 ```
