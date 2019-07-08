@@ -122,3 +122,11 @@ Use an _inner class_ when testing many repetitive unit test cases:
       }
    }
 ```
+
+&nbsp;
+
+Check only one specific test then build and skip all tests:
+```bash
+mvn clean verify -Dtest=ClassName#methodeName
+mvn install -DskipTests=true
+```
