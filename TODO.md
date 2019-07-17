@@ -6,6 +6,16 @@
   - how to install jpegtran: `sudo apt install libjpeg-progs`
   - `montage image{1,2,3}.png -tile 1x3 -geometry +0+0 images.png`
   - `mogrify ... *.png`
+  - `djvudigital`
+  - `pdf2djvu`
+  - `jbig2dec`
+  - `http://www.cheapimpostor.com/PDFInspector/`
+  - `pdfimages -list input.pdf`
+  - `pdfimages -all input.pdf prefix`
+  - `pdfimages -png input.pdf prefix`
+  - `pdfinfo input.pdf`
+  - `qpdf --stream-data=uncompress compressed.pdf uncompressed.pdf`
+  - `qpdf uncompressed.pdf compressed.pdf`
 
 * Audio tips:
   - choose MP3 compression bitrate and quality
