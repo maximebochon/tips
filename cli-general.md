@@ -117,6 +117,22 @@ awk '{sum += $1} END {print "Count="NR; print"Total="sum; print "Average="sum/NR
 
 &nbsp;
 
+Find everything owned by a user or a group:
+```
+sudo find / -user $USER
+sudo find / -group $GROUP
+```
+
+&nbsp;
+
+Delete a user or a group:
+```
+sudo userdel $USER
+sudo groupdel $GROUP
+```
+
+&nbsp;
+
 :heavy_division_sign: Fun code to delete one file out of two (unsafe for file names with spaces):
 ```sh
 for f in *.xml; do [ -f rm ] && rm -f $f && rm rm || touch rm; done; rm -f rm;
