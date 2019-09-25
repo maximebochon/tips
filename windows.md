@@ -20,3 +20,10 @@ Get the shortcut of an application pinned in the taskbar (Windows 7 and above):
 - type `WIN+R` and run `shell:user pinned`
 - enter the `TaskBar` directory
 - it should contain shortcuts to these applications
+
+&nbsp;
+
+Display HTTP proxy settings:
+```bat
+netsh winhttp show proxy
+```
