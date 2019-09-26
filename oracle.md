@@ -20,14 +20,14 @@ rlwrap sqlplus
 
 &nbsp;
 
-Unlock a user account :
+Unlock a user account:
 ```sql
 alter user _USER_ account unlock;
 ```
 
 &nbsp;
 
-Change a user's password :
+Change a user's password:
 ```sql
 alter user _USER_ identified by _NEW_PASSWORD_;
 ```
