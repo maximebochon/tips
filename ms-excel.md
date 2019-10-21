@@ -1,9 +1,9 @@
 # Microsoft Excel tips
 
-Shortcut to type a line break:
+:leftwards_arrow_with_hook: Shortcut to type a line break:
 - in a cell: `ALT`+`ENTER`
 - in the _Find and Replace_ window: `CTRL`+`J`
 
 &nbsp;
 
-Shortcut to refresh cell values: `CTRL`+`ALT`+`F9`
+:arrows_counterclockwise: Shortcut to refresh cell values: `CTRL`+`ALT`+`F9`
