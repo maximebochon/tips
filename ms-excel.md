@@ -7,3 +7,7 @@
 &nbsp;
 
 :arrows_counterclockwise: Shortcut to refresh cell values: `CTRL`+`ALT`+`F9`
+
+&nbsp;
+
+:no_entry_sign: Custom cell format definition to hide its content: `;;;`
