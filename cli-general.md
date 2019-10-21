@@ -117,7 +117,7 @@ awk '{sum += $1} END {print "Count="NR; print"Total="sum; print "Average="sum/NR
 
 &nbsp;
 
-Find everything owned by a user or a group:
+:family: Find everything owned by a user or a group:
 ```
 sudo find / -user $USER
 sudo find / -group $GROUP
@@ -125,7 +125,7 @@ sudo find / -group $GROUP
 
 &nbsp;
 
-Delete a user or a group:
+:skull: Delete a user or a group:
 ```
 sudo userdel $USER
 sudo groupdel $GROUP
