@@ -1,3 +1,5 @@
+# TODO List
+
 * Image/doc tips:
   - lossless JPEG cropping
   - lossless JPEG rotating (`jpegtran -rotate 90 -perfect input.jpg > output.jpg`)
@@ -37,3 +39,6 @@
 
 * Facebook:
   - insert an empty first line in a comment : insert a _soft hyphen_ (`&#173;`) just before the carriage return
+
+* XML ?
+  - `xmllint --xpath "//*[local-name()='stage']/@name" $f 2>/dev/null`
