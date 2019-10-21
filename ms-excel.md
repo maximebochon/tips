@@ -1,4 +1,4 @@
-
+# Microsoft Excel tips
 
 Shortcut to type a line break:
 - in a cell: `ALT`+`ENTER`
