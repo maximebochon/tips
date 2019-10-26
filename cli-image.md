@@ -9,7 +9,7 @@ exiftool "-AllDates+=0:0:0 1:0:0" *.jpg
 
 :label: Rename [JPEG](https://jpeg.org/jpeg/) pictures based on [EXIF](https://en.wikipedia.org/wiki/Exif) information using [ExifTool](http://owl.phy.queensu.ca/~phil/exiftool/):
 ```sh
-exiftool -dateFormat %Y-%m-%d_%Hh%Mm%Ss '-Filename<Cuba.${DateTimeOriginal}${SubSecTimeOriginal;$_=substr($_,0,3);$_.=0 x(3-length)}.${Model;tr/ /-/}.${FileTypeExtension}' *.jpg
+exiftool -dateFormat %Y-%m-%d_%Hh%Mm%Ss '-Filename<Cuba.${DateTimeOriginal}${SubSecTimeOriginal;$_=substr($_,0,3);$_.=0 x(3-length)}.${Model;tr/ /-/}.${FileTypeExtension}' *.{jpg,JPG,jpeg,JPEG}
 # example: IMG_1042.JPG  --> Cuba.2019-03-12_10h55m36s002.Canon-EOS-50D.jpg
 #          IMG_2658.jpeg --> Cuba.2019-03-29_17h29m44s432.Redmi-Note-6-Pro.jpg
 ```
