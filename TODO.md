@@ -43,3 +43,4 @@
 
 * XML ?
   - `xmllint --xpath "//*[local-name()='stage']/@name" $f 2>/dev/null`
+  - `xmllint --format document.xml`
