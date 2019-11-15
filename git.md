@@ -5,7 +5,7 @@ Commit routine:
 git status
 git add ...
 git status
-git commit -m "<commit_message>"
+git commit -m "<commit_message>" -m "<commit_description>"
 ```
 
 Fix last commit message:
