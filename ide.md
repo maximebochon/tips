@@ -11,3 +11,12 @@ Compare two files:
 Find in path: `CTRL`+`MAJ`+`F`
 
 Search everywhere: `SHIFT` `SHIFT`
+
+## Vim
+
+Replace every (`g`) occurence of `search` with `replace` in the entire file (`%`):
+```
+%s/search/replace/g
+```
+
+Toggle case of the current character or selection: `~`
