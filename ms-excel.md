@@ -14,7 +14,7 @@
 
 &nbsp;
 
-:scissors: Extract text from cell content using a regular expression in VBA:
+:scissors: Extract text from cell content using a regular expression in [VBA](https://en.wikipedia.org/wiki/Visual_Basic_for_Applications):
 - In cell: ```=extractInfo(<cell>;<index>)```
 - In VBA code:
 ```vba
