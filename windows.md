@@ -1,10 +1,8 @@
 # Windows tips
 
-:clock2: Display Windows start-up date and time (among other information):
-```bat
-net statistics workstation
-```
-(i.e. date and time at which the Windows login prompt appeared to the user)
+:clock2: Display Windows start-up date and time:
+- open a _PowerShell_ terminal (`WIN+R`, `powershell`, `⮠ `)
+- type the following command: `(gcim Win32_OperatingSystem).LastBootUpTime`
 
 &nbsp;
 
