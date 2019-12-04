@@ -37,6 +37,7 @@
   
 * CLI general:
   - check POSIX compliance of cli-general
+  - strace basics
 
 * Facebook:
   - insert an empty first line in a comment : insert a _soft hyphen_ (`&#173;`) just before the carriage return
