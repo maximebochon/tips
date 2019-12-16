@@ -127,5 +127,5 @@ git rebase upstream/${branch}
 
 Display the first commit of some user in current branch:
 ```sh
-git log --author="${user}" --reverse --max-count=1
+git log --author="${user}" --reverse | head -4
 ```
