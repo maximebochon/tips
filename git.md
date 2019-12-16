@@ -124,3 +124,8 @@ git remote add upstream ${Git project URL, either SSH or HTTP}
 git fetch upstream
 git rebase upstream/${branch}
 ```
+
+Display the first commit of some user in current branch:
+```sh
+git log --author="${user}" --reverse --max-count=1
+```
