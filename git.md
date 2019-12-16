@@ -116,3 +116,11 @@ Revert up to some specific commit and loose intermediate history (does not work 
 git reset --hard <commit>
 git push origin HEAD --force
 ```
+
+Add up-stream project and rebase on it:
+```
+# from the fork repository:
+git remote add upstream <Git project URL, either SSH or HTTP>
+git fetch upstream
+git rebase upstream/<branch>
+```
