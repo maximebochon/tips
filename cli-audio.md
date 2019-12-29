@@ -17,7 +17,7 @@ sox ${input_audio} -C 320.0 ${output_audio}.mp3
 &nbsp;
 
 Concatenate audio files losslessly using [FFmpeg](https://ffmpeg.org/) (more information [here](https://trac.ffmpeg.org/wiki/Concatenate)):
-- create a text file `concat-list.txt` to describe files to be concatenated :
+- create a text file `concat-list.txt` to describe files to be concatenated:
 ```
 file 'relative-path-to-file-1.m4a'
 file 'relative-path-to-file-2.m4a'
