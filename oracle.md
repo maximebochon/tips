@@ -56,3 +56,10 @@ select info, rawtohex(data), utl_raw.substr(data, 3, 1) from raw_test;
 -- test1 | 5A0D61F7 | 61 --
 -- test2 | 0011AAFF | AA --
 ```
+
+&nbsp;
+
+Make it easy to have multiple table tabs open at once in [SQL Developer](https://docs.oracle.com/en/database/oracle/sql-developer/index.html):
+- Tools 🠖 Preferences...
+- Database 🠖 Object Viewer
+- Automatically Freeze Object Viewer Windows
