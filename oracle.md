@@ -1,23 +1,12 @@
 # Oracle notes
 
+## SQL
+
 Get current timestamp:
 ```sql
 select to_char(sysdate, 'YYYY-MM-DD HH24:MI:SS') from dual;
 -- output example: 2017-12-13 14:20:11
 ```
-&nbsp;
-
-Disconnect from SQL\*Plus when stuck: `CTRL+D`
-
-&nbsp;
-
-SQL\*Plus can work well with arrow keys by calling `sqlplus` through `rlwrap`:
-```bash
-sudo apt install rlwrap
-sudo su oracle
-rlwrap sqlplus
-```
-
 &nbsp;
 
 Unlock a user account:
@@ -58,6 +47,23 @@ select info, rawtohex(data), utl_raw.substr(data, 3, 1) from raw_test;
 ```
 
 &nbsp;
+
+## SQL\*Plus
+
+Disconnect from SQL\*Plus when stuck: `CTRL+D`
+
+&nbsp;
+
+SQL\*Plus can work well with arrow keys by calling `sqlplus` through `rlwrap`:
+```bash
+sudo apt install rlwrap
+sudo su oracle
+rlwrap sqlplus
+```
+
+&nbsp;
+
+## SQL Developer
 
 Make it easy to have multiple table tabs open at once in [SQL Developer](https://docs.oracle.com/en/database/oracle/sql-developer/index.html):
 - Tools 🠖 Preferences...
