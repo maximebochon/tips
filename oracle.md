@@ -48,6 +48,14 @@ select info, rawtohex(data), utl_raw.substr(data, 3, 1) from raw_test;
 
 &nbsp;
 
+Add a comment on a column:
+```sql
+comment on column some_table.some_column is
+'Description of column ''some_column'' to help developers and testers to use it.';
+```
+
+&nbsp;
+
 ## SQL\*Plus
 
 Disconnect from SQL\*Plus when stuck: `CTRL+D`
