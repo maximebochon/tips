@@ -75,3 +75,9 @@ Display connection passwords in [SQL Developer](https://docs.oracle.com/en/datab
   - Restart SQL Developer.
 - Go to _File_ 🠖 _Show Me Password_.
 - Read column _Saved Password_.
+
+&nbsp;
+
+Force the user interface language to _English_ in [SQL Developer](https://docs.oracle.com/en/database/oracle/sql-developer/index.html):
+- Edit file `sqldeveloper\bin\sqldeveloper.conf` in SQL Developer's installation directory.
+- Add the following line and save: `AddVMOption -Duser.language=en`
