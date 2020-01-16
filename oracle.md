@@ -56,6 +56,27 @@ comment on column some_table.some_column is
 
 &nbsp;
 
+Add extra checkings on column values:
+```sql
+-- Limit possible values of a VARCHAR2 column:
+alter table t add constraint check_format check ( format in ( 'CSV', 'XML', 'JSON', 'RAW' ) );
+
+-- Constrain precedence between two dates:
+alter table t add constraint check_event check ( event_end is null or event_start <= event_end );
+
+-- Restrict range of a NUMBER(1) column to map days of week:
+alter table t add constraint check_day check ( day_of_week between 0 and 6 );
+
+-- Enforce a CHAR(4) column to describe time values, using the two first digits for hours and the two last for minutes:
+-- Valid examples: '0000', '0059', '1200', '1435', '2359'
+alter table t add constraint check_hhmm check ( regexp_like( hhmm, '^([0-1][0-9]|[2][0-3])([0-5][0-9])$' ) );
+
+-- Enforce a CHAR(36) column to describe a canonical textual representation of a 128 bits UUID:
+alter table t add constraint check_uuid check ( regexp_like( uuid, '^[0-9a-f]{4}([0-9a-f]{4}-){4}[0-9a-z]{12}$' ) );
+```
+
+&nbsp;
+
 ## SQL\*Plus
 
 Disconnect from SQL\*Plus when stuck: `CTRL+D`
