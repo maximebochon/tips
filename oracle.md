@@ -63,3 +63,15 @@ Make it easy to have multiple table tabs open at once in [SQL Developer](https:/
 - Tools 🠖 Preferences...
 - Database 🠖 Object Viewer
 - Automatically Freeze Object Viewer Windows
+
+&nbsp;
+
+Display connection passwords in [SQL Developer](https://docs.oracle.com/en/database/oracle/sql-developer/index.html):
+- Install _TomeCode_'s _Show Me Password_ extension for SQL Developer:
+  - Download [here](http://show-me-password.tomecode.com/) the extension archive targeting your version of SQL Developer.
+  - Go to _Help_ 🠖 _Check for Updates..._
+  - Choose _Install From Local Files(s)_ and point to the downloaded file.
+  - Click _Next_ and _Finish_.
+  - Restart SQL Developer.
+- Go to _File_ 🠖 _Show Me Password_.
+- Read column _Saved Password_.
