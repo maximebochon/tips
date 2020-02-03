@@ -130,3 +130,17 @@ Check only one specific test then build and skip all tests:
 mvn clean verify -Dtest=ClassName#methodeName
 mvn install -DskipTests=true
 ```
+
+&nbsp;
+
+Get current class statically:
+```java
+import java.lang.invoke.MethodHandles;
+
+...
+
+private static final Class currentClass = MethodHandles.lookup().lookupClass();
+
+private static final String className = currentClass.getSimpleName();
+
+```
