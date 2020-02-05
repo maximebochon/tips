@@ -129,3 +129,8 @@ Display the first commit of some user in current branch:
 ```sh
 git log --author="${user}" --reverse | head -4
 ```
+
+Display ignored files:
+```sh
+git status --ignored
+```
