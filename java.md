@@ -144,3 +144,14 @@ private static final Class currentClass = MethodHandles.lookup().lookupClass();
 private static final String className = currentClass.getSimpleName();
 
 ```
+
+&nbsp;
+
+Use `Pattern.quote` to escape text part of a regular expression:
+```java
+import java.util.regex.Pattern;
+
+String[] letters = "A|B|C".split(Pattern.quote("|"));
+
+org.junit.Assert.assertEquals(3, letters.length);
+```
