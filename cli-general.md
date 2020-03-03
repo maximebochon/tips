@@ -137,3 +137,11 @@ sudo groupdel $GROUP
 ```sh
 for f in *.xml; do [ -f rm ] && rm -f $f && rm rm || touch rm; done; rm -f rm;
 ```
+
+&nbsp;
+
+:ghost: Prevent commands in a `bash` terminal from being stored in history:
+- `HISTCONTROL` environment variable should be set to `ignorespace` or `ignoreboth` (done by default on most systems)
+- type your command with a leading space to prevent storing it in history
+
+&nbsp;
