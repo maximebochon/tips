@@ -8,6 +8,11 @@ git status
 git commit -m "${commit message}" -m "${commit description}"
 ```
 
+Show changes on staged files only:
+```
+git diff --cached
+```
+
 Fix last commit message:
 ```sh
 git commit --amend -m "${new commit message}"
