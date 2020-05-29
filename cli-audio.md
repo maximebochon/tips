@@ -16,6 +16,14 @@ sox ${input_audio} -C 320.0 ${output_audio}.mp3
 
 &nbsp;
 
+Convert audio file to constant bitrate [AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) using [FFmpeg](https://ffmpeg.org/):
+```sh
+ffmpeg -i ${input_audio} -c:a aac -b:a ${bitrate}k ${output_audio}.m4a
+```
+More options are described [here](https://trac.ffmpeg.org/wiki/Encode/AAC).
+
+&nbsp;
+
 Concatenate audio files losslessly using [FFmpeg](https://ffmpeg.org/) (more information [here](https://trac.ffmpeg.org/wiki/Concatenate)):
 - create a text file `concat-list.txt` to describe files to be concatenated:
 ```
