@@ -1,6 +1,6 @@
 # Microsoft Word tips
 
-When working with fields (page number, caption, reference, etc.), `ALT`+`F9` is used to switch between rendering and editing mode :
+:speech_balloon: When working with fields (page number, caption, reference, etc.), `ALT`+`F9` is used to switch between rendering and editing mode :
 <table>
   <tr>
     <th>Editing mode</th>
@@ -14,4 +14,4 @@ When working with fields (page number, caption, reference, etc.), `ALT`+`F9` is 
 
 &nbsp;
 
-Shortcut for _Find and replace_ is not ~~`CTRL`+`R`~~ but `CTRL`+`H`.
+:currency_exchange: Shortcut for _Find and replace_ is not ~~`CTRL`+`R`~~ but `CTRL`+`H`.
