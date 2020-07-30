@@ -1,4 +1,7 @@
 # Microsoft Word tips
+_(Tested with Word 2016 on Windows 10)_
+
+&nbsp;
 
 :speech_balloon: When working with fields (page number, caption, reference, etc.), `ALT`+`F9` is used to switch between rendering and editing mode :
 <table>
