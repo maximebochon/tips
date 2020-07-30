@@ -11,3 +11,7 @@ When working with fields (page number, caption, reference, etc.), `ALT`+`F9` is 
     <td>30/07/2020 - Page 1 out of 149</td>
   </tr>
 </table>
+
+&nbsp;
+
+Shortcut for _Find and replace_ is not ~~`CTRL`+`R`~~ but `CTRL`+`H`.
