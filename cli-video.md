@@ -1,13 +1,15 @@
 # Command line video handling and processing tips
 
-Merge [Matroska](https://www.matroska.org/) videos using [MKVToolNix](https://mkvtoolnix.download/):
+:dango: Concatenate consecutive video parts using [MKVToolNix](https://mkvtoolnix.download/):
 ```sh
 mkvmerge -o output.mkv input1.mkv \+ input2.mkv \+ input3.mkv
+mkvmerge -o full.mkv part1.avi \+ part2.avi
+mkvmerge -o abc.mp4 a.mp4 \+ b.mp4 \+ c.mp4
 ```
 
 &nbsp;
 
-Apply geometric transformations to a video with relative values using [FFmpeg](https://ffmpeg.org/):
+:triangular_ruler: Apply geometric transformations to a video with relative values using [FFmpeg](https://ffmpeg.org/):
 ```sh
 ffmpeg -i $input -vf "rotate=PI,crop=2/3*in_w:3/4*in_h:0:1/4*in_h" $output
 # rotate by 180 degrees and crop as follows:
