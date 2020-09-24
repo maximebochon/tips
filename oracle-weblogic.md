@@ -4,7 +4,7 @@
 
 &nbsp;
 
-Activate the debug mode permanently on a local domain:
+:construction: Activate the debug mode permanently on a local domain:
 - open the `setDomainEnv.sh` file for the domain
 - locate and uncomment the following lines:
 ```
@@ -14,7 +14,7 @@ export debugFlag
 
 &nbsp;
 
-Configure a WAR to be able to use SLF4J without conflicting with WebLogic's version of SLF4J :
+:scroll: Configure a WAR to be able to use SLF4J without conflicting with WebLogic's version of SLF4J :
 - if not already done, create a `weblogic.xml` file in `WEB-INF` directory
 - add the two following `prefer-application-*` blocks to your `weblogic.xml`:
 ```xml
