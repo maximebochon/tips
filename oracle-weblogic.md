@@ -39,3 +39,16 @@ export debugFlag
 
 </weblogic-web-app>
 ```
+
+&nbsp;
+
+:key: Default _KeyStore_ and _TrustStore_ present in a WebLogic 12 instance:
+
+- _KeyStore_ : private key and identity certificates
+  - JKS file location: `${DOMAIN_HOME}/security/DemoIdentity.jks`
+  - store password: `DemoIdentityKeyStorePassPhrase`
+  - private key password: `DemoIdentityPassPhrase`
+  
+- _TrustStore_ : certificates from Certified Authorities (CA)
+  - JKS file location: `${WEBLOGIC_HOME}/wlserver/server/lib/DemoTrust.jks`
+  - store password: `DemoTrustKeyStorePassPhrase`
