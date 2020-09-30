@@ -9,8 +9,13 @@
 ## Programming
 - [Git](git.md)
 - [Java](java.md)
-- [Oracle](oracle.md)
+- [Oracle DB](oracle-db.md)
+- [WebLogic](oracle-weblogic.md)
 
-## Operating System
-- [Windows](windows.md)
-- [Linux](linux.md)
+## Operating Systems
+- [Linux](os-linux.md)
+- [Windows](os-windows.md)
+
+## Desktop applications
+- [Word](ms-word.md)
+- [Excel](ms-excel.md)
