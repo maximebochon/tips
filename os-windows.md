@@ -25,3 +25,19 @@ Display HTTP proxy settings:
 ```bat
 netsh winhttp show proxy
 ```
+
+&nbsp;
+
+Set the window of an application always on top of others knowing its PID:
+- open a _PowerShell_ terminal (`WIN+R`, `powershell`, `⮠ `)
+- replace the value of the target PID in this script and run it:
+```powershell
+$targetPID = 12345
+$signature = @'
+[DllImport("user32.dll")] public static extern bool SetWindowPos(
+IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
+'@
+$api = Add-Type -MemberDefinition $signature -Name NativeAPI -Namespace NativeAPI -Using System.Text -PassThru
+$window = (Get-Process -id $targetPID).MainWindowHandle
+$api::SetWindowPos($window, -1, 0, 0, 0, 0, 0x0003) # use -2 instead of -1 to cancel the 
+```
