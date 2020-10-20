@@ -28,7 +28,7 @@ netsh winhttp show proxy
 
 &nbsp;
 
-Set the window of an application always on top of others knowing its PID:
+Set the window of an application always on top of others knowing its PID (Windows 7 and above):
 - open a _PowerShell_ terminal (`WIN+R`, `powershell`, `⮠ `)
 - replace the value of the target PID in this script and run it:
 ```powershell
@@ -41,3 +41,5 @@ $api = Add-Type -MemberDefinition $signature -Name NativeAPI -Namespace NativeAP
 $window = (Get-Process -id $targetPID).MainWindowHandle
 $api::SetWindowPos($window, -1, 0, 0, 0, 0, 0x0003) # use -2 instead of -1 to cancel the 
 ```
+- [this other script](https://github.com/bkfarnsworth/Always-On-Top-PS-Script/blob/master/Always_On_Top.ps1) does the same in a more advanced manner:
+a GUI is shown to select the targeted window without having to know its PID
