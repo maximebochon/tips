@@ -114,7 +114,8 @@ qpdf --rotate=+180:1-z input.pdf output.pdf
 ```
 &nbsp;
 
-Convert a PDF document from one specification version to another using [GhostScript](https://www.ghostscript.com/):
+:books: Convert a PDF document from one specification version to another using [GhostScript](https://www.ghostscript.com/):
 ```sh
-gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -o output.pdf input.pdf
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=${version} -o output.pdf input.pdf
+# version: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 2.0 (as of 2020)
 ```
