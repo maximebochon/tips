@@ -112,3 +112,9 @@ qpdf --rotate=-90:2,5 input.pdf output.pdf
 qpdf --rotate=+180:1-z input.pdf output.pdf
 # rotate all pages by 180° clockwise
 ```
+&nbsp;
+
+Convert a PDF document from one specification version to another using [GhostScript](https://www.ghostscript.com/):
+```sh
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -o output.pdf input.pdf
+```
