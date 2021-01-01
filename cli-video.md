@@ -19,3 +19,11 @@ ffmpeg -i $input -vf "rotate=PI,crop=2/3*in_w:3/4*in_h:0:1/4*in_h" $output
 #   new height: 3/4 of original height
 ```
 
+&nbsp;
+
+:gift: Change media container type without reencoding using [FFmpeg](https://ffmpeg.org/):
+```sh
+ffmpeg -i video.mov -codec copy video.mp4
+ffmpeg -i video.mp4 -codec copy video.mkv
+...
+```
