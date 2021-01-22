@@ -24,3 +24,10 @@ done
 # sudo apt install wajig
 wajig large
 ```
+
+&nbsp;
+
+:lizard: Show process information by clicking on a window:
+```bash
+ps -p $(xprop | awk '/PID/ {print $3}') -o user,pid,args
+```
