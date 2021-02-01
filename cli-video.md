@@ -30,10 +30,10 @@ ffmpeg -i video.mp4 -codec copy video.mkv
 
 &nbsp;
 
-:loud_sound: Extract an audio track from a video for editing purpose using [FFmpeg](https://ffmpeg.org/):
+:loud_sound: Extract the audio track of a video for editing purpose using [FFmpeg](https://ffmpeg.org/):
 ```sh
 ffmpeg -i video.mp4 audio.wav
-// audio is encoded uncompressed in WAVE format
+# audio is encoded uncompressed in WAVE format
 ```
 
 &nbsp;
@@ -41,5 +41,5 @@ ffmpeg -i video.mp4 audio.wav
 :musical_score: Replace the audio track of a video using [FFmpeg](https://ffmpeg.org/):
 ```sh
 ffmpeg -i video.mp4 -i audio.wav -c:v copy -map 0:v -map 1:a video-with-new-audio.mp4
-// video is not reencoded, audio is encoded in AAC
+# video is not reencoded, audio is encoded in AAC
 ```
