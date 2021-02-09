@@ -22,6 +22,7 @@
 
 * Audio tips:
   - choose MP3 compression bitrate and quality
+  - Compresser en AAC CBR avec FFMpeg sans bibliothèque additionnelle : `ffmpeg -i input.wav -c:a aac -b:a 160k output.m4a`
 
 * Windows tips:
   - check uptime command, and add alternative command using `systeminfo`
