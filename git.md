@@ -153,6 +153,13 @@ git stash pop ${stash index}
 
 &nbsp;
 
+Put aside changes for unstaged files only:
+```sh
+git stash -k
+```
+
+&nbsp;
+
 Put aside changes for some files only:
 ```sh
 git stash push -m "${description}" -p ${file 1} ${file 2} ... ${file N}
