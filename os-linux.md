@@ -31,3 +31,19 @@ wajig large
 ```bash
 ps -p $(xprop | awk '/PID/ {print $3}') -o user,pid,args
 ```
+&nbsp;
+
+:tropical_drink: Verify and use a remote Samba storage:
+- Check Samba availability and the share name to be used: `smbclient -N -L ${ip_address}`
+```
+# If not available you get:
+Connection to ${ip_address} failed
+```
+```
+# If available you get:
+Sharename       Type   Comment
+---------       ----   -------
+${share_name}   Disk   ...
+...
+```
+- Open the shared storage in _Thunar_: `thunar smb://${ip_address}/${share_name}/`
