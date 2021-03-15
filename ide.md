@@ -15,6 +15,7 @@ Search everywhere: `SHIFT` `SHIFT`
 ## Vim
 
 - `dd` : delete current line
+- `dd`, `p` : move current line
 - `yy`, `p` : duplicate current line
 - `i` : switch to _insert_ mode (before cursor)
 - `Esc` : exit _insert_ mode 
