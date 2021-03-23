@@ -1,6 +1,6 @@
 # Linux tips
 
-Get general OS and distribution information:
+:label: Get general OS and distribution information:
 - `lsb_release -a`
 - `hostnamectl`
 - `cat /etc/issue`
@@ -34,12 +34,13 @@ wajig large
 ```
 &nbsp;
 
-Adjust laptop backlight the hard way:
+:high_brightness: Adjust laptop backlight brightness the hard way:
 ```bash
 cd /sys/class/backlight/acpi_video0
 sudo su root
 echo $BRIGHTNESS > brightness
 # with $BRIGHTNESS from 0 to ./max_brightness
+exit
 ```
 
 &nbsp;
