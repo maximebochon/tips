@@ -1,5 +1,13 @@
 # Linux tips
 
+Get general OS and distribution information:
+- `lsb_release -a`
+- `hostnamectl`
+- `cat /etc/issue`
+- `cat /etc/os-release`
+
+&nbsp;
+
 :bookmark: Remove unwanted default bookmarks in _Nautilus_:
 - edit `~/.config/user-dirs.dirs`
 - comment unwanted variables (`XDG_TEMPLATE_DIR`, `XDG_PUBLICSHARE_DIR`...)
