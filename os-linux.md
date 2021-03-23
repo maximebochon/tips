@@ -32,6 +32,15 @@ done
 # sudo apt install wajig
 wajig large
 ```
+&nbsp;
+
+Adjust laptop backlight the hard way:
+```bash
+cd /sys/class/backlight/acpi_video0
+sudo su root
+echo $BRIGHTNESS > brightness
+# with $BRIGHTNESS from 0 to ./max_brightness
+```
 
 &nbsp;
 
