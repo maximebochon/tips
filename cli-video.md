@@ -30,6 +30,15 @@ ffmpeg -i video.mp4 -codec copy video.mkv
 
 &nbsp;
 
+:cyclone: Set orientation of [MOV](https://en.wikipedia.org/wiki/QuickTime_File_Format), [MP4](https://en.wikipedia.org/wiki/MPEG-4) and [3GP](https://fr.wikipedia.org/wiki/3GP) video files without reencoding using [FFmpeg](https://ffmpeg.org/):
+```sh
+ffmpeg -i input.$EXT -c copy -metadata:s:v:0 rotate=$ANGLE output.$EXT
+# EXT: mov, mp4, 3gp
+# ANGLE: 0, 90, 180, 270 (degrees)
+```
+
+&nbsp;
+
 :loud_sound: Extract the audio track of a video for editing purpose using [FFmpeg](https://ffmpeg.org/):
 ```sh
 ffmpeg -i video.mp4 audio.wav
