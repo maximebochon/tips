@@ -35,3 +35,13 @@ file '/absolute/path/to/file-3.m4a'
 ```sh
 ffmpeg -f concat -i concat-list.txt -c copy output.m4a
 ```
+
+&nbsp;
+
+Extract a part of an AAC audio file losslessly using [FFmpeg](https://ffmpeg.org/):
+```sh
+ffmpeg -i input.m4a -c:a copy -ss ${start} -t ${duration} part.m4a
+ffmpeg -i input.m4a -c:a copy -ss ${start} -to ${end} part.m4a
+# start, duration and end are written this way: HH:MM:SS.sss
+# (HH: hours, MM: minutes, SS: seconds, sss: milliseconds)
+```
