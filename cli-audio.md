@@ -1,6 +1,6 @@
 # Command line audio handling and processing tips
 
-Convert audio file to [Ogg](https://xiph.org/ogg/)-[Vorbis](https://xiph.org/vorbis/), [FLAC](https://xiph.org/flac/) or [LAME-MP3](http://lame.sourceforge.net/) using [SoX](http://sox.sourceforge.net/):
+:recycle: Convert audio file to [Ogg](https://xiph.org/ogg/)-[Vorbis](https://xiph.org/vorbis/), [FLAC](https://xiph.org/flac/) or [LAME-MP3](http://lame.sourceforge.net/) using [SoX](http://sox.sourceforge.net/):
 ```sh
 sox ${input_audio} -C ${quality} ${output_audio}.ogg
 # Ogg-Vorbis quality from -1 (worst) to 10 (best)
@@ -16,7 +16,7 @@ sox ${input_audio} -C 320.0 ${output_audio}.mp3
 
 &nbsp;
 
-Convert audio file to constant bitrate [AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) using [FFmpeg](https://ffmpeg.org/):
+:recycle: Convert audio file to constant bitrate [AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) using [FFmpeg](https://ffmpeg.org/):
 ```sh
 ffmpeg -i ${input_audio} -c:a aac -b:a ${bitrate}k ${output_audio}.m4a
 ```
@@ -24,7 +24,7 @@ More options are described [here](https://trac.ffmpeg.org/wiki/Encode/AAC).
 
 &nbsp;
 
-Concatenate audio files losslessly using [FFmpeg](https://ffmpeg.org/) (more information [here](https://trac.ffmpeg.org/wiki/Concatenate)):
+:oden: Concatenate audio files losslessly using [FFmpeg](https://ffmpeg.org/) (more information [here](https://trac.ffmpeg.org/wiki/Concatenate)):
 - create a text file `concat-list.txt` to describe files to be concatenated:
 ```
 file 'relative-path-to-file-1.m4a'
@@ -38,7 +38,7 @@ ffmpeg -f concat -i concat-list.txt -c copy output.m4a
 
 &nbsp;
 
-Extract a part of an AAC audio file losslessly using [FFmpeg](https://ffmpeg.org/):
+:scissors: Extract a part of an AAC audio file losslessly using [FFmpeg](https://ffmpeg.org/):
 ```sh
 ffmpeg -i input.m4a -c:a copy -ss ${start} -t ${duration} part.m4a
 ffmpeg -i input.m4a -c:a copy -ss ${start} -to ${end} part.m4a
