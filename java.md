@@ -155,3 +155,41 @@ String[] letters = "A|B|C".split(Pattern.quote("|"));
 
 org.junit.Assert.assertEquals(3, letters.length);
 ```
+
+&nbsp;
+
+Detect plain ASCII text:
+
+```java
+import static java.nio.charset.StandardCharsets.US_ASCII;
+
+/**
+ * Check that a byte array is plain ASCII text.
+ * See {@link java.lang.String#String(byte[], Charset)} to understand how it works.
+ *
+ * @param b a byte array
+ * @return true if b is plain ASCII text, otherwise false.
+ */
+private static boolean isPlainAsciiText(final byte[] b)
+{
+   return Arrays.equals(b, new String(b, US_ASCII).getBytes(US_ASCII));
+}
+```
+
+```java
+import com.google.common.base.Ascii; // from com.google.guava:guava:30.1-jre
+
+/**
+ * Check that a byte value belongs to the subset of ASCII printable characters, i.e.:
+ * - LINE-FEED (10)
+ * - CARRIAGE-RETURN (13)
+ * - all characters from SPACE (32) to TILDE (126)
+ *
+ * @param b a byte
+ * @return true if b belongs the subset of ASCII printable characters, otherwise false.
+ */
+private static boolean isByteInAsciiPrintableSubset(final byte b)
+{
+   return (b == Ascii.LF) || (b == Ascii.CR) || (b >= Ascii.SPACE && b < Ascii.MAX);
+}
+```
