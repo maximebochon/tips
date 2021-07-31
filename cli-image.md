@@ -130,3 +130,11 @@ qpdf --rotate=+180:1-z input.pdf output.pdf
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=${version} -o output.pdf input.pdf
 # version: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 2.0 (as of 2020)
 ```
+
+&nbsp;
+
+:arrow_upper_right: Scale a PDF document losslessly using [Coherent PDF](https://community.coherentpdf.com/) (closed source, free for personal use):
+```sh
+cpdf -scale-page "${x_factor} ${y_factor}" input.pdf -o output.pdf
+# for instance: "4 3", "0.5801 0.5801", etc.
+```
