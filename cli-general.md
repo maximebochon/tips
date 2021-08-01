@@ -145,3 +145,10 @@ for f in *.xml; do [ -f rm ] && rm -f $f && rm rm || touch rm; done; rm -f rm;
 - type your command with a leading space to prevent storing it in history
 
 &nbsp;
+
+:closed_lock_with_key: Encrypt and decrypt a file by passphrase using [GNU Privacy Guard](https://gnupg.org/):
+```sh
+gpg --output data-file.encrypted --symmetric --cipher-algo AES256 data-file
+gpg --output data-file.decrypted --decrypt data-file.encrypted
+# cksum on data-file.decrypted should give same result as on data-file
+```
