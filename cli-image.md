@@ -138,3 +138,11 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=${version} -o output.pdf input.pdf
 cpdf -scale-page "${x_factor} ${y_factor}" input.pdf -o output.pdf
 # for instance: "4 3", "0.5801 0.5801", etc.
 ```
+
+&nbsp;
+
+:eye_speech_bubble: Microsoft XPS ([XML Paper Specification](https://www.ecma-international.org/technical-committees/tc46/)) documents can be viewed on Linux using [Okular](https://okular.kde.org/):
+```sh
+sudo apt install okular
+okular document.xps
+```
