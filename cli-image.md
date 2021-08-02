@@ -123,6 +123,7 @@ qpdf --rotate=-90:2,5 input.pdf output.pdf
 qpdf --rotate=+180:1-z input.pdf output.pdf
 # rotate all pages by 180° clockwise
 ```
+
 &nbsp;
 
 :books: Convert a [PDF](https://en.wikipedia.org/wiki/PDF) document from one specification version to another using [GhostScript](https://www.ghostscript.com/):
@@ -137,6 +138,13 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=${version} -o output.pdf input.pdf
 ```sh
 cpdf -scale-page "${x_factor} ${y_factor}" input.pdf -o output.pdf
 # for instance: "4 3", "0.5801 0.5801", etc.
+```
+
+&nbsp;
+
+:unlock: Remove password protection from a [PDF](https://en.wikipedia.org/wiki/PDF) document using [QPDF](http://qpdf.sourceforge.net/):
+```sh
+qpdf --decrypt --password=${password} protected.pdf unprotected.pdf
 ```
 
 &nbsp;
