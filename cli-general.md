@@ -152,3 +152,29 @@ gpg --output data-file.encrypted --symmetric --cipher-algo AES256 data-file
 gpg --output data-file.decrypted --decrypt data-file.encrypted
 # cksum on data-file.decrypted should give same result as on data-file
 ```
+
+&nbsp;
+
+:alarm_clock: Display and schedule jobs using [`crontab`](https://en.wikipedia.org/wiki/Cron):
+
+```sh
+# Display scheduled jobs for the current user:
+crontab -l
+
+# Display scheduled jobs for the specified user:
+crontab -u ${some_user} -l
+
+# Display scheduled jobs if crontab is not allowed:
+(sudo) cat /var/spool/cron/crontabs/${some_user}
+
+# Edit scheduled jobs for the current user:
+crontab -e
+```
+```sh
+# Run a script every working day, every hour, from 8 AM to 8 PM
+0 8-20 * * 1-5 bash -c "/opt/some-script.sh"
+
+# Start some service every day at 8 AM, stop it at 11 PM
+0    8 * * * bash -c "/opt/some-service.sh start"
+0   23 * * * bash -c "/opt/some-service.sh stop"
+```
