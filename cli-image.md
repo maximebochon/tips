@@ -154,3 +154,12 @@ qpdf --decrypt --password=${password} protected.pdf unprotected.pdf
 sudo apt install okular
 okular document.xps
 ```
+
+&nbsp;
+
+Convert Microsoft Word Open XML document to PDF, preserving any lossless images:
+```sh
+sudo apt install unoconv
+doc2pdf input.docx
+# should produce "input.pdf"
+```
