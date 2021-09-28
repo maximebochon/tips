@@ -39,10 +39,13 @@ ffmpeg -i input.$EXT -c copy -metadata:s:v:0 rotate=$ANGLE output.$EXT
 
 &nbsp;
 
-:loud_sound: Extract the audio track of a video for editing purpose using [FFmpeg](https://ffmpeg.org/):
+:loud_sound: Extract the audio track of a video using [FFmpeg](https://ffmpeg.org/):
 ```sh
+# for editing purpose: audio is encoded uncompressed in WAVE format
 ffmpeg -i video.mp4 audio.wav
-# audio is encoded uncompressed in WAVE format
+
+# for storage purpose: audio is extracted losslessly and is supposed to be AAC encoded
+ffmpeg -i video.mp4 -vn -c:a copy audio.m4a
 ```
 
 &nbsp;
