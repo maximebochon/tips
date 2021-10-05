@@ -73,6 +73,13 @@ git push -u origin ${local branch}
 
 &nbsp;
 
+List files modified between two commits:
+```sh
+git diff --name-only ${commit A} ${commit B}
+```
+
+&nbsp;
+
 Create a patch, check it, apply it:
 ```sh
 git diff ${commit A} ${commit B} > diff_fromA_toB.patch
