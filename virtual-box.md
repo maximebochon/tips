@@ -1,10 +1,10 @@
-# Virtual Box
+# VirtualBox
 
 In the context of a _Windows_ host and _Linux_ guests.
 
 ## Convert fixed size VMDK disk image to dynamic size VDI
 
-From a _Windows_ command terminal, run the _Virtual Box_ clone command with options:
+From a _Windows_ command terminal, run the _VirtualBox_ clone command with options:
 
 ```
 VBoxManage.exe clonemedium vm-disk.vmdk vm-disk.vdi --format VDI --variant Standard
@@ -43,7 +43,7 @@ zerofree -v /dev/sda1
 shutdown -P now
 ```
 
-3. From a _Windows_ command terminal, run the _Virtual Box_ compacting command:
+3. From a _Windows_ command terminal, run the _VirtualBox_ compacting command:
 
 ```
 VBoxManage.exe modifymedium disk vm-disk.vdi --compact
