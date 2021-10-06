@@ -72,3 +72,13 @@ From the GUI:
 - select the virtual disk in the list
 - under the _Attributes_ tab, use the _Location_ field to set a new name and/or location
 - click the _Apply_ button to apply the change(s)
+
+## Transfer files between host and guest without mounting a shared folder
+
+From a running virtual machine window:
+- open the _File Manager..._ window from the _Machine_ menu
+- enable all panels (_Session_, _Options_, _Operations_, _Log_)
+- type a valid user name and password in the dedicated fields
+- click the _Create Session_ button to connect to the virtual machine
+- use the left (host) and right (guest) file explorers to transfer files between host and guest systems
+- click the _Close Session_ button when done
