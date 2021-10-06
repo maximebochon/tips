@@ -46,3 +46,27 @@ shutdown -P now
 ```
 VBoxManage.exe modifymedium disk vm-disk.vdi --compact
 ```
+
+## Rename a virtual machine
+
+From the GUI:
+- select the virtual machine in the list
+- open the _Settings..._ window
+- under the _Basic_ tab of the _General_ section, use the _Name_ field to set a new name
+- click the _OK_ button to apply the change
+
+## Move a virtual machine
+
+From the GUI:
+- select the virtual machine in the list
+- open the _Move..._ window
+- select the desired parent directory for the directory containing the virtual machine
+- click the _Select_ button to apply the change
+
+## Rename/move a virtual disk
+
+From the GUI:
+- open the _Virtual Media Manager..._ window from the _File_ menu (or `CTRL`+`D`)
+- select the virtual disk in the list
+- under the _Attributes_ tab, use the _Location_ field to set a new name and/or location
+- click the _Apply_ button to apply the change(s)
