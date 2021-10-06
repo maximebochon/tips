@@ -1,8 +1,10 @@
 # Virtual Box
 
-In the context of a Windows host and Linux guests.
+In the context of a _Windows_ host and _Linux_ guests.
 
 ## Convert fixed size VMDK disk image to dynamic size VDI
+
+From a _Windows_ command terminal, run the _Virtual Box_ clone command with options:
 
 ```
 VBoxManage.exe clonemedium vm-disk.vmdk vm-disk.vdi --format VDI --variant Standard
@@ -10,13 +12,13 @@ VBoxManage.exe clonemedium vm-disk.vmdk vm-disk.vdi --format VDI --variant Stand
 
 ## Shrink size of dynamic size VDI disk image
 
-1. From the Linux VM, install `zerofree` utility:
+1. From the _Linux_ VM, install `zerofree` utility:
 
 ```sh
 sudo apt install zerofree
 ```
 
-2. From the Linux VM recovery mode, open a root prompt and prepare empty space to compacting:
+2. From the _Linux_ VM recovery mode, open a root prompt and prepare empty space to compacting:
 
 ```sh
 # Determine the device to work on and the type of file system used
@@ -41,7 +43,7 @@ zerofree -v /dev/sda1
 shutdown -P now
 ```
 
-3. From a Windows command terminal, run the Virtual Box compacting command:
+3. From a _Windows_ command terminal, run the _Virtual Box_ compacting command:
 
 ```
 VBoxManage.exe modifymedium disk vm-disk.vdi --compact
