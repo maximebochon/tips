@@ -65,3 +65,17 @@ ${share_name}   Disk   ...
 ...
 ```
 - Open the shared storage in _Thunar_: `thunar smb://${ip_address}/${share_name}/`
+
+&nbsp;
+
+:ping_pong: Set a proxy configuration for [APT](https://en.wikipedia.org/wiki/APT_%28software%29):
+- Add the adapted following lines to `/etc/apt/apt.conf.d/proxy.conf`:
+```sh
+Acquire::http::Proxy "http://username:password@proxy-ip:proxy-port/";
+Acquire::https::Proxy "https://username:password@proxy-ip:proxy-port/";
+```
+- In some cases, it may look simpler (no authentification, same for HTTP and HTTPS, no S for HTTPS):
+```sh
+Acquire::http::Proxy "http://10.31.255.65:8080/";
+Acquire::https::Proxy "http://10.31.255.65:8080/";
+```
