@@ -97,3 +97,13 @@ Provided the requirements are fulfilled:
 - save and validate (_OK_ button twice)
 
 A new _media_ should be detected and automatically mounted in the Linux guest, here: `/media/sf_<name>/`
+
+## Higher screen resolution at startup
+
+_This information is unsure and should be treated cautiously._
+
+It seems that from version 6.1 of VirtualBox, the screen resolution at startup is fixed to 800×600 pixels which is quite low for some modern graphical Linux installers.
+
+A workaround to that is to check the _Enable EFI (special OSes only)_ option in the _Motherboard_ tab of the _System_ settings **before installing Linux**.
+
+Be carefull: switching _EFI_ on after having already installed Linux may lead to major malfunction of the VM.
