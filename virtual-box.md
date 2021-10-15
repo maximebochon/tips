@@ -82,3 +82,18 @@ From a running virtual machine window:
 - click the _Create Session_ button to connect to the virtual machine
 - use the left (host) and right (guest) file explorers to transfer files between host and guest systems
 - click the _Close Session_ button when done
+
+## Automatically mount a Windows host folder in the Linux guest VM
+
+These are the requirements for a Linux VM user to be able to access automatically mounted shared folders:
+- the _Guest Additions_ must have been installed properly in the VM
+- the user in the VM must belong to the group `vboxsf`: `sudo adduser $USER vboxsf`
+
+Provided the requirements are fulfilled:
+- user the _Devices_ > _Shared Folders_ > _Shared Folder Settings..._ window to define a new shared folder
+- choose a name to identify the shared folder from inside the Linux guest VM
+- check options _Auto-mount_ and _Make Permanent_
+- leave the field _Mount point_ empty
+- save and validate (_OK_ button twice)
+
+A new _media_ should be detected and automatically mounted in the Linux guest, here: `/media/sf_<name>/`
