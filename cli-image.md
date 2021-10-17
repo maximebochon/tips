@@ -41,6 +41,17 @@ convert $input -resize ${width}x${height} $output
 
 &nbsp;
 
+:dollar: Convert an image of a piece of paper of known size to a [PDF](https://en.wikipedia.org/wiki/PDF) document of matching size using [ImageMagick](https://www.imagemagick.org/):
+```sh
+# Suppose we know the paper height in inches, noted H_IN:
+convert $input -density `identify -format '%[fx:h/$H_IN]' $input` $output
+
+# Suppose we know the paper width in centimeters, noted W_CM:
+convert $input -density `identify -format '%[fx:w/$W_CM*2.54]' $input` $output
+```
+
+&nbsp;
+
 :ab: Assemble images as a mosaic using [ImageMagick](https://www.imagemagick.org/):
 ```sh
 montage -mode concatenate -tile 4x3 *.png out.png
