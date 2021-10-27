@@ -52,3 +52,9 @@
 * XML ?
   - `xmllint --xpath "//*[local-name()='stage']/@name" $f 2>/dev/null`
   - `xmllint --format document.xml`
+
+* Windows:
+  - install Ubuntu via WSL 2 : PS> wsl --install Ubuntu
+  - install Windows Terminal without having access to the Windows Store
+  - set default terminal in Windows Terminal 
+  - add GitBash profil into Windows Terminal
