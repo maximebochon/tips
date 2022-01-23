@@ -43,3 +43,10 @@ $api::SetWindowPos($window, -1, 0, 0, 0, 0, 0x0003) # use -2 instead of -1 to ca
 ```
 - [this other script](https://github.com/bkfarnsworth/Always-On-Top-PS-Script/blob/master/Always_On_Top.ps1) does the same in a more advanced manner:
 a GUI is shown to select the targeted window without having to know its PID
+
+&nbsp;
+
+Mount a directory as a drive:
+```bat
+subst D: C:\DATA
+```
