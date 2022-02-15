@@ -162,7 +162,7 @@ git stash pop ${stash index}
 
 Put aside changes for unstaged files only:
 ```sh
-git stash -k
+git stash --keep-index
 ```
 
 &nbsp;
