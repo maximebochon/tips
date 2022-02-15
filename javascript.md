@@ -51,3 +51,25 @@ console.log(z); // { a: 50 }
 z.a = 70; // OK
 console.log(z); // { a: 70 }
 ```
+
+## Easy to read (indented) JSON
+
+```javascript
+const object = { a: { x: 1, y: 2}, b: { x: 10, y: 20}, c: null };
+const easyToReadJSON = JSON.stringify(object, null, 2);
+console.log(easyToReadJSON);
+```
+
+```json
+{
+  "a": {
+    "x": 1,
+    "y": 2
+  },
+  "b": {
+    "x": 10,
+    "y": 20
+  },
+  "c": null
+}
+```
