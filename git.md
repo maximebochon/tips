@@ -101,6 +101,14 @@ git apply diff_fromA_toB.patch
 
 &nbsp;
 
+Export one commit as a detailed patch file:
+
+```sh
+git format-patch -1 ${commit}
+```
+
+&nbsp;
+
 Apply version of a file from another branch:
 
 ```sh
