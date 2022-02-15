@@ -203,3 +203,12 @@ Display ignored files:
 ```sh
 git status --ignored
 ```
+
+&nbsp;
+
+Use _libsecret_ as a credential manager for git on Linux:
+```sh
+sudo apt-get install make gcc libsecret-1-0 libsecret-1-dev libsecret-tools seahorse
+cd /usr/share/doc/git/contrib/credential/libsecret && sudo make
+git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+```
