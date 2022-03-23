@@ -1,4 +1,4 @@
-# Internet Proxy Configuration
+# Internet Proxy Configuration on Debian-like Linux distributions
 
 In sections below, variables like `${VARIABLE}` should be replaced with something of the form described in this table:
 
