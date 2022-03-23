@@ -44,3 +44,18 @@ Reload procedure:
 sudo systemctl daemon-reload
 sudo systemctl restart docker.service
 ```
+
+&nbsp;
+
+## Global environment variables
+
+File: `/etc/profile.d/internet-proxy.sh`
+
+Syntax:
+
+```sh
+# Internet proxy configuration
+export http_proxy=${HTTP_PROXY}
+export https_proxy=${HTTPS_PROXY}
+export no_proxy=${NO_PROXY}
+```
