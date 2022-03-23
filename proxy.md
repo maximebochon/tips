@@ -8,6 +8,8 @@ In sections below, variables like `${VARIABLE}` should be replaced with somethin
 | `HTTPS_PROXY` | `http(s)://$username:$password@$proxy-host:$proxy-port/` | `http://10.31.255.65:8080/` |
 | `NO_PROXY`    | `$host-or-IPv4-or-IPv6,...,$etc`                         | `localhost,127.0.0.1,::1`   |
 
+&nbsp;
+
 ## [APT](https://en.wikipedia.org/wiki/APT_%28software%29)
 
 File: `/etc/apt/apt.conf.d/proxy.conf`
@@ -20,6 +22,8 @@ Acquire {
   https::Proxy "${HTTPS_PROXY}";
 }
 ```
+
+&nbsp;
 
 # [Docker](https://en.wikipedia.org/wiki/Docker_(software))
 
