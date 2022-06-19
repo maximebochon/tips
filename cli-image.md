@@ -153,6 +153,14 @@ cpdf -scale-page "${x_factor} ${y_factor}" input.pdf -o output.pdf
 
 &nbsp;
 
+:x: Remove metadata from a [PDF](https://en.wikipedia.org/wiki/PDF) document using [ExifTool](http://owl.phy.queensu.ca/~phil/exiftool/) and [QPDF](http://qpdf.sourceforge.net/):
+```sh
+exiftool -all:all= document-with-metadata.pdf # no more properties for PDF viewers, but still traces in raw data
+qpdf --linearize document-with-metadata.pdf document-without-metadata.pdf # no more traces in raw data
+```
+
+&nbsp;
+
 :unlock: Remove password protection from a [PDF](https://en.wikipedia.org/wiki/PDF) document using [QPDF](http://qpdf.sourceforge.net/):
 ```sh
 qpdf --decrypt --password=${password} protected.pdf unprotected.pdf
