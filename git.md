@@ -234,6 +234,14 @@ git log --author="${user}" --reverse | head -4
 
 &nbsp;
 
+Display the list of all users in current branch:
+
+```sh
+git shortlog --summary --numbered --email
+```
+
+&nbsp;
+
 Display ignored files:
 
 ```sh
