@@ -234,7 +234,7 @@ git log --author="${user}" --reverse | head -4
 
 &nbsp;
 
-Display the list of all users in current branch:
+Display the list of all users:
 
 ```sh
 git shortlog --summary --numbered --email
