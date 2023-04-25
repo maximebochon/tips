@@ -64,3 +64,13 @@ Lock current session:
 &nbsp;
 
 Trigger `CTRL`+`ALT`+`END` from a _Remote Desktop_ session to get the same behaviour as `CTRL`+`ALT`+`DEL`.
+
+&nbsp;
+
+Files containing system icons:
+- `%SystemRoot%`
+  - `explorer.exe`
+  - `System32`
+    - `shell32.dll`
+    - `imageres.dll`
+    - `ddores.dll`
