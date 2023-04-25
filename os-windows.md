@@ -54,3 +54,10 @@ Mount a directory as a drive:
 ```bat
 subst D: C:\DATA
 ```
+
+&nbsp;
+
+Lock current session from command line:
+```bat
+rundll32.exe user32.dll,LockWorkStation
+```
