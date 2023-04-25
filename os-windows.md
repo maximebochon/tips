@@ -57,7 +57,6 @@ subst D: C:\DATA
 
 &nbsp;
 
-Lock current session from command line:
-```bat
-rundll32.exe user32.dll,LockWorkStation
-```
+Lock current session:
+- from the keyboard: `WIN`+`L`
+- from the command line: ```rundll32.exe user32.dll,LockWorkStation```
