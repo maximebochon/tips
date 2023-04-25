@@ -60,3 +60,7 @@ subst D: C:\DATA
 Lock current session:
 - from the keyboard: `WIN`+`L`
 - from the command line: ```rundll32.exe user32.dll,LockWorkStation```
+
+&nbsp;
+
+Trigger `CTRL`+`ALT`+`END` from a _Remote Desktop_ session to get the same behaviour as `CTRL`+`ALT`+`DEL`.
