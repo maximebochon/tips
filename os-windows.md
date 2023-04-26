@@ -71,6 +71,13 @@ Files containing system icons:
 - `%SystemRoot%`
   - `explorer.exe`
   - `System32`
-    - `shell32.dll`
-    - `imageres.dll`
     - `ddores.dll`
+    - `dsuiext.dll`
+    - `ieframe.dll`
+    - `imageres.dll`
+    - `mstscax.dll`
+    - `mstsc.exe`
+    - `networkexplorer.dll`
+    - `setupapi.dll`
+    - `shell32.dll`
+    - `wmploc.dll`
