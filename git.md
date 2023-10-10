@@ -43,6 +43,14 @@ git branch --sort=committerdate
 
 &nbsp;
 
+List remote branches:
+
+```sh
+git branch -r
+```
+
+&nbsp;
+
 Switch branches:
 
 ```sh
