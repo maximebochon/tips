@@ -91,6 +91,14 @@ git push -u origin ${local branch}
 
 &nbsp;
 
+Remove branches that no longer exist on the remote, then update:
+
+```sh
+git fetch -p # or --prune
+```
+
+&nbsp;
+
 List files modified between two commits:
 
 ```sh
