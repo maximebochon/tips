@@ -19,7 +19,7 @@ git diff --staged
 
 &nbsp;
 
-Fix last commit message:
+Fix last commit message (safe for local commits):
 
 ```sh
 git commit --amend -m "${new commit message}"
@@ -27,7 +27,7 @@ git commit --amend -m "${new commit message}"
 
 &nbsp;
 
-Undo last commit:
+Undo last commit (safe for local commits):
 
 ```sh
 git reset HEAD~1
