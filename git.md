@@ -14,7 +14,7 @@ git commit -m "${commit message}" -m "${commit description}"
 Show changes on staged files only:
 
 ```
-git diff --cached
+git diff --staged
 ```
 
 &nbsp;
