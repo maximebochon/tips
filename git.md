@@ -242,6 +242,14 @@ git rebase upstream/${branch}
 
 &nbsp;
 
+Display all commit messages (subject and body) separated by a line containing `--` written in blue:
+
+```sh
+git log --format=%B%Cblue--%Creset
+```
+
+&nbsp;
+
 Display the first commit of some user in current branch:
 
 ```sh
