@@ -15,6 +15,7 @@
 ## Operating Systems
 - [Linux](os-linux.md)
 - [Windows](os-windows.md)
+- [WSL](os-wsl.md)
 
 ## Desktop applications
 - [Word](ms-word.md)
