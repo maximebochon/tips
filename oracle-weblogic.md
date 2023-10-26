@@ -1,4 +1,4 @@
-# Oracle WebLogic
+# Oracle WebLogic tips
 
 > All tips are for a Linux environment.
 
