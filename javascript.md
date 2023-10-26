@@ -1,4 +1,4 @@
-# JavaScript
+# JavaScript notes
 
 ## `var`, `let`, `const` and variable scope
 
