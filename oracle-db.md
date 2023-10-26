@@ -1,4 +1,4 @@
-# Oracle Database
+# Oracle Database notes
 
 ## SQL
 
