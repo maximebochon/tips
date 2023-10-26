@@ -1,4 +1,4 @@
-# Integrated Development Environment
+# Tips on IDEs (Integrated Development Environment)
 
 ## IntelliJ IDEA
 
