@@ -1,5 +1,7 @@
 # [MuseScore](https://musescore.org/)
 
+> Tips written in French.
+
 Raccourcis sous [MuseScore 3.5](https://musescore.org/en/3.5) :
 - Saisir une note : `A`, `B`, `C`, `D`, `E`, `F`, `G`
 - Abaisser/Élever d'un demi-ton : `↓`/`↑`
