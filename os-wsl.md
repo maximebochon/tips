@@ -1,4 +1,4 @@
-# WSL (_Windows Subsystem for Linux_)
+# WSL (_Windows Subsystem for Linux_) tips
 
 Root path of a WSL distribution from Windows: `\\wsl$\<Distribution>`.
 
