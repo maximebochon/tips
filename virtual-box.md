@@ -1,4 +1,4 @@
-# VirtualBox
+# VirtualBox notes
 
 In the context of a _Windows_ host and _Linux_ guests.
 
