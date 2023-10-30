@@ -19,6 +19,15 @@ git diff --staged
 
 &nbsp;
 
+Show file differences at a smaller scope than a line:
+
+```sh
+git diff --color-words   # word-wise
+git diff --color-words=. # character-wise
+```
+
+&nbsp;
+
 Fix last commit message (safe for local commits):
 
 ```sh
