@@ -39,7 +39,7 @@
 * Java 8:
   - `list.stream().anyMatch(Objects::isNull)`
   - `pathList.sort(Path::compareTo)`;
-  
+
 * CLI general:
   - check POSIX compliance of cli-general
   - strace basics
@@ -73,3 +73,26 @@
   - `k delete <kind> <name> -n <namespace>`
   - `k get account <account>`
   - `helm list -n <namespace>`
+
+* Git tips:
+  - 
+
+```sh
+### Delete untracked files ###
+
+git clean --dry-run # files are not deleted for real
+# ...
+
+git clean -f # files are deleted straightaway
+# ...
+
+git clean -i # interactive: git asks for what to do
+# ...
+```
+
+```sh
+### Start an interactive rebase session ###
+
+git rebase -i HEAD~$N
+# explain
+```
