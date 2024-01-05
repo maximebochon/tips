@@ -31,6 +31,8 @@
 * Linux tips:
   - simpler alternative command to finding text in files using grep with some options?
   - XFCE: add type-related send-to commands in file manager
+  - `sudo groupadd restricted`, `sudo usermod -aG restricted jdoe`, `id jdoe`
+  - `sudo chown root:root /home/jdoe`, `sudo chmod 755 /home/jdoe`, `sudo chown jdoe:jdoe sub_dir`
 
 * Java 8:
   - `list.stream().anyMatch(Objects::isNull)`
