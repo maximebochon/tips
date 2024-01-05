@@ -59,3 +59,4 @@
   - install Windows Terminal without having access to the Windows Store
   - set default terminal in Windows Terminal 
   - add GitBash profil into Windows Terminal
+  - GitBash cygpath
