@@ -19,6 +19,7 @@
   - `qpdf --stream-data=uncompress compressed.pdf uncompressed.pdf`
   - `qpdf uncompressed.pdf compressed.pdf`
   - `qpdf --qdf --object-streams=disable in.pdf out.pdf`
+  - enable PDF operations in ImageMagick
 
 * Audio tips:
   - choose MP3 compression bitrate and quality
