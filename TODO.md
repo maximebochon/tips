@@ -64,3 +64,9 @@
   - set default terminal in Windows Terminal 
   - add GitBash profil into Windows Terminal
   - GitBash cygpath
+
+* Kubernetes:
+  - `k get <kind> --show-labels`, `k get CiliumNetworkPolicy`
+  - `k delete <kind> <name> -n <namespace>`
+  - `k get account <account>`
+  - `helm list -n <namespace>`
