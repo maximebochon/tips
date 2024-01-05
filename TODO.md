@@ -34,6 +34,8 @@
   - `sudo groupadd restricted`, `sudo usermod -aG restricted jdoe`, `id jdoe`
   - `sudo chown root:root /home/jdoe`, `sudo chmod 755 /home/jdoe`, `sudo chown jdoe:jdoe sub_dir`
 
+* SFTP basics : `get [-r]`, `put [-r]`, `rm`, `rename`, `ls`, `pwd #remote`, `lcd #local`, `lpwd #local`, `!<local_command>` `exit`
+
 * Java 8:
   - `list.stream().anyMatch(Objects::isNull)`
   - `pathList.sort(Path::compareTo)`;
