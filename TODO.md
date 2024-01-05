@@ -51,6 +51,9 @@
   - Ajouter une ligne "toto" avant chaque ligne "tata" : `perl -ni.bak -e 'print "toto\n" if $_ =~ /tata/; print;' file`
   - Ajouter une ligne "toto" avant la premiere ligne "tata" : `perl -ni.bak -e 'BEGIN{$c=0} print "toto\n" if $_ =~ /tata/ and 0 == $c++; print;' file`
 
+* VIM basics:
+  - `:`, `/`, `R`, `r`, `D`, `dd`, `:q`, `:wq`, :`q!`
+
 * Facebook:
   - insert an empty first line in a comment : insert a _soft hyphen_ (`&#173;`) just before the carriage return
 
