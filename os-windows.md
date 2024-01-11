@@ -16,8 +16,8 @@
 
 Get the shortcut of an application pinned in the taskbar (Windows 7 and above):
 - type `WIN+R` and run `shell:user pinned`
-- enter the `TaskBar` directory
-- it should contain shortcuts to these applications
+- enter the `TaskBar` directory, it should contain shortcuts to these applications
+- there may also be an `ImplicitAppShortcuts` directory containing other shorcuts
 
 &nbsp;
 
