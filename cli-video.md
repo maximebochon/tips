@@ -65,3 +65,10 @@ ffmpeg -ss 00:00:05.01 -i video.ext -frames:v 1 -qscale:v 2 image.png
 # save frame as lossy but high quality JPEG file
 ffmpeg -ss 00:00:05.06 -i video.ext -frames:v 1 -qscale:v 2 image.jpg
 ```
+&nbsp;
+
+:curly_loop: Save an [M3U8](https://en.wikipedia.org/wiki/M3U#M3U8) based [HTTP Live Streaming](https://en.wikipedia.org/wiki/HTTP_Live_Streaming)
+to an [MP4](https://en.wikipedia.org/wiki/MP4_file_format) file using [FFmpeg](https://ffmpeg.org/):
+```sh
+ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -i index.m3u8 -c copy -bsf:a aac_adtstoasc stream.mp4
+```
