@@ -1,6 +1,6 @@
 # Command line audio handling and processing tips
 
-:recycle: Convert audio file to [Ogg](https://xiph.org/ogg/)-[Vorbis](https://xiph.org/vorbis/), [FLAC](https://xiph.org/flac/) or [LAME-MP3](http://lame.sourceforge.net/) using [SoX](http://sox.sourceforge.net/):
+:recycle: Convert one audio file to [Ogg](https://xiph.org/ogg/)-[Vorbis](https://xiph.org/vorbis/), [FLAC](https://xiph.org/flac/) or [LAME-MP3](http://lame.sourceforge.net/) using [SoX](http://sox.sourceforge.net/):
 ```sh
 sox ${input_audio} -C ${quality} ${output_audio}.ogg
 # Ogg-Vorbis quality from -1 (worst) to 10 (best)
@@ -16,7 +16,18 @@ sox ${input_audio} -C 320.0 ${output_audio}.mp3
 
 &nbsp;
 
-:recycle: Convert audio file to constant bitrate [AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) using [FFmpeg](https://ffmpeg.org/):
+:recycle: Convert all files in current directory to another format using [SoX](http://sox.sourceforge.net/):
+```sh
+# Convert all WAVE files to FLAC
+for file in *.wav; do sox "$file" "${file%.*}".flac; done
+
+# Convert all FLAC files to MP3 (256 kbps, best encoding quality)
+for file in *.flac; do sox "$file" -C 256.0 "${file%.*}".mp3; done
+```
+
+&nbsp;
+
+:recycle: Convert one audio file to constant bitrate [AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) using [FFmpeg](https://ffmpeg.org/):
 ```sh
 ffmpeg -i ${input_audio} -c:a aac -b:a ${bitrate}k ${output_audio}.m4a
 ```
