@@ -176,7 +176,7 @@ okular document.xps
 
 &nbsp;
 
-Convert Microsoft Word Open XML document to PDF, preserving any lossless images:
+:last_quarter_moon: Convert Microsoft Word Open XML document to PDF, preserving any lossless images:
 ```sh
 sudo apt install unoconv
 doc2pdf input.docx
