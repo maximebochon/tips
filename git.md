@@ -231,6 +231,14 @@ git stash push -m "${description}" -p ${file 1} ${file 2} ... ${file N}
 
 &nbsp;
 
+Apply the latest stash on some files only:
+
+```sh
+git checkout stash@{0} -- ${file 1} ${file 2} ... ${file N}
+```
+
+&nbsp;
+
 Revert up to some specific commit and loose intermediate history (does not work on a protected branch):
 
 ```sh
