@@ -67,6 +67,10 @@ Trigger `CTRL`+`ALT`+`END` from a _Remote Desktop_ session to get the same behav
 
 &nbsp;
 
+On a French AZERTY keyboard, use the `WIN`+`;` shortcut to acess the emoji pop-up window.
+
+&nbsp;
+
 Files containing system icons:
 - `%SystemRoot%`
   - `explorer.exe`
