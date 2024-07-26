@@ -14,14 +14,14 @@
 
 &nbsp;
 
-Get the shortcut of an application pinned in the taskbar (Windows 7 and above):
+:link: Get the shortcut of an application pinned in the taskbar (Windows 7 and above):
 - type `WIN+R` and run `shell:user pinned`
 - enter the `TaskBar` directory, it should contain shortcuts to these applications
 - there may also be an `ImplicitAppShortcuts` directory containing other shorcuts
 
 &nbsp;
 
-Display HTTP proxy settings:
+:minibus: Display HTTP proxy settings:
 
 ```bat
 netsh winhttp show proxy
@@ -29,7 +29,7 @@ netsh winhttp show proxy
 
 &nbsp;
 
-Set the window of an application always on top of others knowing its PID (Windows 7 and above):
+:1st_place_medal: Set the window of an application always on top of others knowing its PID (Windows 7 and above):
 - open a _PowerShell_ terminal (`WIN+R`, `powershell`, `⮠ `)
 - replace the value of the target PID in this script and run it:
 
@@ -49,7 +49,7 @@ a GUI is shown to select the targeted window without having to know its PID
 
 &nbsp;
 
-Mount a directory as a drive:
+:open_file_folder: Mount a directory as a drive:
 
 ```bat
 subst D: C:\DATA
@@ -57,21 +57,21 @@ subst D: C:\DATA
 
 &nbsp;
 
-Lock current session:
+:lock: Lock current session:
 - from the keyboard: `WIN`+`L`
 - from the command line: ```rundll32.exe user32.dll,LockWorkStation```
 
 &nbsp;
 
-Trigger `CTRL`+`ALT`+`END` from a _Remote Desktop_ session to get the same behaviour as `CTRL`+`ALT`+`DEL`.
+:curly_loop: Trigger `CTRL`+`ALT`+`END` from a _Remote Desktop_ session to get the same behaviour as `CTRL`+`ALT`+`DEL`.
 
 &nbsp;
 
-On a French AZERTY keyboard, use the `WIN`+`;` shortcut to acess the emoji pop-up window.
+:smiley: On a French AZERTY keyboard, use the `WIN`+`;` shortcut to access the emoji pop-up window.
 
 &nbsp;
 
-Files containing system icons:
+:symbols: Files containing system icons:
 - `%SystemRoot%`
   - `explorer.exe`
   - `System32`
