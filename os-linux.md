@@ -4,7 +4,8 @@
 - `lsb_release -a`
 - `hostnamectl`
 - `cat /etc/issue`
-- `cat /etc/os-release`
+- `cat /etc/*-release`
+- `cat /etc/*-version`
 
 &nbsp;
 
