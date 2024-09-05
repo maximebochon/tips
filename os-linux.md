@@ -80,3 +80,19 @@ Acquire::https::Proxy "https://username:password@proxy-ip:proxy-port/";
 Acquire::http::Proxy "http://10.31.255.65:8080/";
 Acquire::https::Proxy "http://10.31.255.65:8080/";
 ```
+
+&nbsp;
+
+:watch: Display, in real time, detailed system date and time information:
+```sh
+watch --interval 1 timedatectl
+```
+```
+                Local time: sam. 2024-05-04 15:26:01 CEST
+            Universal time: sam. 2024-05-04 13:26:01 UTC
+                  RTC time: sam. 2024-05-04 13:26:00
+                 Time zone: Europe/Paris (CEST, +0200)
+ System clock synchronized: no
+               NTP service: inactive
+           RTC in local TZ: no
+```
