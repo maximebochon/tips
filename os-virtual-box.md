@@ -5,17 +5,17 @@ In the context of a _Windows_ host and _Linux_ guests.
 
 &nbsp;
 
-## Convert fixed size VMDK disk image to dynamic size VDI
+## 📈 Convert fixed size VMDK disk image to dynamic size VDI
 
 From a _Windows_ command terminal, run the _VirtualBox_ clone command with options:
 
-```
+```cmd
 VBoxManage.exe clonemedium vm-disk.vmdk vm-disk.vdi --format VDI --variant Standard
 ```
 
 &nbsp;
 
-## Shrink size of dynamic size VDI disk image
+## 📉 Shrink size of dynamic size VDI disk image
 
 1. From the _Linux_ VM, install `zerofree` utility:
 
@@ -50,13 +50,13 @@ shutdown -P now
 
 3. From a _Windows_ command terminal, run the _VirtualBox_ compacting command:
 
-```
+```cmd
 VBoxManage.exe modifymedium disk vm-disk.vdi --compact
 ```
 
 &nbsp;
 
-## Rename a virtual machine
+## ✏ Rename a virtual machine
 
 From the GUI:
 - select the virtual machine in the list
@@ -66,7 +66,7 @@ From the GUI:
 
 &nbsp;
 
-## Move a virtual machine
+## 🚚 Move a virtual machine
 
 From the GUI:
 - select the virtual machine in the list
@@ -76,7 +76,7 @@ From the GUI:
 
 &nbsp;
 
-## Rename/move a virtual disk
+## 🏷 Rename/move a virtual disk
 
 From the GUI:
 - open the _Virtual Media Manager..._ window from the _File_ menu (or `CTRL`+`D`)
@@ -86,7 +86,7 @@ From the GUI:
 
 &nbsp;
 
-## Transfer files between host and guest without mounting a shared folder
+## ↔ Transfer files between host and guest without mounting a shared folder
 
 From a running virtual machine window:
 - open the _File Manager..._ window from the _Machine_ menu
@@ -98,7 +98,7 @@ From a running virtual machine window:
 
 &nbsp;
 
-## Automatically mount a Windows host folder in the Linux guest VM
+## 📁 Automatically mount a Windows host folder in the Linux guest VM
 
 These are the requirements for a Linux VM user to be able to access automatically mounted shared folders:
 - the _Guest Additions_ must have been installed properly in the VM
@@ -115,7 +115,7 @@ A new _media_ should be detected and automatically mounted in the Linux guest, h
 
 &nbsp;
 
-## Higher screen resolution at startup
+## 📺 Higher screen resolution at startup
 
 _This information is unsure and should be treated cautiously._
 
@@ -127,11 +127,11 @@ Be carefull: switching _EFI_ on after having already installed Linux may lead to
 
 &nbsp;
 
-## Prevent automatic time synchronization of the guest OS by _VirtualBox_
+## ⏲ Prevent automatic time synchronization of the guest OS by _VirtualBox_
 
 From a _Windows_ command terminal, run the _VirtualBox_ manage command, on the desired virtual machine,
 to set its `GetHostTimeDisabled` property:
 
-```
+```cmd
 VBoxManage.exe setextradata VM-NAME "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" 1
 ```
