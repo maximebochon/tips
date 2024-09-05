@@ -2,6 +2,42 @@
 
 In the context of a _Windows_ host and _Linux_ guests.
 
+&nbsp;
+
+## 🧬 Install the _Guest Additions_ for advanced _VirtualBox_ integration
+
+From the _Linux_ VM:
+
+1. Ensure that the network interface is enabled and connected to the internet.
+
+2. Upgrade all packages:
+
+```sh
+sudo apt update && sudo apt upgrade
+```
+
+3. Install packages required by the _Guest Additions_ builder:
+
+```sh
+sudo apt install gcc make perl kernel-devel
+```
+
+4. In the _VirtualBox_ menu, trigger the _Insert Guest Additions CD Image_ feature.
+
+4. Build and install the _Guest Additions_ (ensure that no error occurs):
+
+```sh
+cd /media/*/VBox_GAs_*/ && sudo ./VBoxLinuxAdditions.run
+```
+
+6. Restart the VM and check that the following features are working properly:
+  - seamless mouse integration
+  - adaptative screen size
+  - shared clipboard
+  - file manager
+  - ...
+
+More info [here](https://www.virtualbox.org/manual/ch04.html).
 
 &nbsp;
 
