@@ -2,6 +2,9 @@
 
 In the context of a _Windows_ host and _Linux_ guests.
 
+
+&nbsp;
+
 ## Convert fixed size VMDK disk image to dynamic size VDI
 
 From a _Windows_ command terminal, run the _VirtualBox_ clone command with options:
@@ -9,6 +12,8 @@ From a _Windows_ command terminal, run the _VirtualBox_ clone command with optio
 ```
 VBoxManage.exe clonemedium vm-disk.vmdk vm-disk.vdi --format VDI --variant Standard
 ```
+
+&nbsp;
 
 ## Shrink size of dynamic size VDI disk image
 
@@ -49,6 +54,8 @@ shutdown -P now
 VBoxManage.exe modifymedium disk vm-disk.vdi --compact
 ```
 
+&nbsp;
+
 ## Rename a virtual machine
 
 From the GUI:
@@ -56,6 +63,8 @@ From the GUI:
 - open the _Settings..._ window
 - under the _Basic_ tab of the _General_ section, use the _Name_ field to set a new name
 - click the _OK_ button to apply the change
+
+&nbsp;
 
 ## Move a virtual machine
 
@@ -65,6 +74,8 @@ From the GUI:
 - select the desired parent directory for the directory containing the virtual machine
 - click the _Select_ button to apply the change
 
+&nbsp;
+
 ## Rename/move a virtual disk
 
 From the GUI:
@@ -72,6 +83,8 @@ From the GUI:
 - select the virtual disk in the list
 - under the _Attributes_ tab, use the _Location_ field to set a new name and/or location
 - click the _Apply_ button to apply the change(s)
+
+&nbsp;
 
 ## Transfer files between host and guest without mounting a shared folder
 
@@ -82,6 +95,8 @@ From a running virtual machine window:
 - click the _Create Session_ button to connect to the virtual machine
 - use the left (host) and right (guest) file explorers to transfer files between host and guest systems
 - click the _Close Session_ button when done
+
+&nbsp;
 
 ## Automatically mount a Windows host folder in the Linux guest VM
 
@@ -97,6 +112,8 @@ Provided the requirements are fulfilled:
 - save and validate (_OK_ button twice)
 
 A new _media_ should be detected and automatically mounted in the Linux guest, here: `/media/sf_<name>/`
+
+&nbsp;
 
 ## Higher screen resolution at startup
 
