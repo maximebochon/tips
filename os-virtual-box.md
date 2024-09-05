@@ -124,3 +124,14 @@ It seems that from version 6.1 of VirtualBox, the screen resolution at startup i
 A workaround to that is to check the _Enable EFI (special OSes only)_ option in the _Motherboard_ tab of the _System_ settings **before installing Linux**.
 
 Be carefull: switching _EFI_ on after having already installed Linux may lead to major malfunction of the VM.
+
+&nbsp;
+
+## Prevent automatic time synchronization of the guest OS by _VirtualBox_
+
+From a _Windows_ command terminal, run the _VirtualBox_ manage command, on the desired virtual machine,
+to set its `GetHostTimeDisabled` property:
+
+```
+VBoxManage.exe setextradata VM-NAME "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" 1
+```
