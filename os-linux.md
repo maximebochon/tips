@@ -50,6 +50,18 @@ exit
 ```bash
 ps -p $(xprop | awk '/PID/ {print $3}') -o user,pid,args
 ```
+
+&nbsp;
+
+:minidisc: Monitor per process input/output usage:
+```bash
+sudo iotop
+# show every process, refresh every second
+
+sudo iotop --only --delay=5
+# show only processes with I/O activity, refresh every 5 seconds
+```
+
 &nbsp;
 
 :tropical_drink: Verify and use a remote Samba storage:
