@@ -20,6 +20,10 @@ Works well as a one-liner too:
 ```sh
 while [ 1 ]; do tput clear; date; sleep 2; done
 ```
+...but even better, there is an app for that!
+```sh
+watch -n $PERIOD date
+```
 
 &nbsp;
 
