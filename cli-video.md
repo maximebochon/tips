@@ -64,6 +64,14 @@ ffmpeg -i video.mp4 -vn -c:a copy audio.m4a
 ffmpeg -i video.mp4 -i audio.wav -c:v copy -map 0:v -map 1:a video-with-new-audio.mp4
 # video is not reencoded, audio is encoded in AAC
 ```
+
+&nbsp;
+
+:mute: Remove audio from a video using [FFmpeg](https://ffmpeg.org/):
+```sh
+ffmpeg -i video-with-audio.mp4 -vcodec copy -an video-without-audio.mp4
+```
+
 &nbsp;
 
 :white_square_button: Extract a specific frame/image from a video as a PNG/JPEG file using [FFmpeg](https://ffmpeg.org/):
