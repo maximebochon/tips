@@ -9,6 +9,15 @@ mkvmerge -o abc.mp4 a.mp4 \+ b.mp4 \+ c.mp4
 
 &nbsp;
 
+:abc: Combine consecutive [`.ts`](https://en.wikipedia.org/wiki/MPEG_transport_stream) files as one video using [FFmpeg](https://ffmpeg.org/):
+```sh
+cat 0001.ts 0002.ts 0003.ts > combined.ts
+ffmpeg -i combined.ts -codec copy video.mp4
+```
+<!-- try the piped version 'cat ... | ffmpeg -i pipe:0 ...' -->
+
+&nbsp;
+
 :triangular_ruler: Apply geometric transformations to a video with relative values using [FFmpeg](https://ffmpeg.org/):
 ```sh
 ffmpeg -i $input -vf "rotate=PI,crop=2/3*in_w:3/4*in_h:0:1/4*in_h" $output
