@@ -125,3 +125,11 @@ sudo apt autoremove
 sudo apt autoclean
 sudo apt clean
 ```
+
+### Spotify
+
+Locate Spotify's cache directory and remove every `??/*.file` file in it.
+
+Here are some examples of default cache directory for Spotify:
+- `$HOME/.cache/spotify/Data`
+- `$HOME/snap/spotify/common/.cache/spotify/Data`
