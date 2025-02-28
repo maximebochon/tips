@@ -129,6 +129,13 @@ sudo find / -group $GROUP
 
 &nbsp;
 
+:o: Find and delete empty files:
+```
+find . -type f -empty -delete
+```
+
+&nbsp;
+
 :skull: Delete a user or a group:
 ```
 sudo userdel $USER
