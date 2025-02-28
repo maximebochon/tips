@@ -108,3 +108,12 @@ watch --interval 1 timedatectl
                NTP service: inactive
            RTC in local TZ: no
 ```
+
+## Free some space
+
+### Journals
+
+```sh
+sudo journalctl --vacuum-size=100M
+# Keep only most recent 100M of data.
+```
