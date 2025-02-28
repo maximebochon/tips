@@ -126,6 +126,14 @@ sudo apt autoclean
 sudo apt clean
 ```
 
+### Snap
+
+Limit old versions storage to the minimum:
+
+```bash
+sudo snap set system refresh.retain=2
+```
+
 ### Spotify
 
 Locate Spotify's cache directory and remove every `??/*.file` file in it.
