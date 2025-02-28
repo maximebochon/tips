@@ -117,3 +117,11 @@ watch --interval 1 timedatectl
 sudo journalctl --vacuum-size=100M
 # Keep only most recent 100M of data.
 ```
+
+### APT
+
+```sh
+sudo apt autoremove
+sudo apt autoclean
+sudo apt clean
+```
