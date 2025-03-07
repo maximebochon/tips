@@ -267,6 +267,21 @@ git log --format=%B%Cblue--%Creset
 
 &nbsp;
 
+Display a pretty, fined-tuned, graphical representation of the commit history, in coloured ASCII:
+
+```sh
+# …of the current branch:
+git log --graph --decorate --pretty=oneline --abbrev-commmit
+
+# …of all branches:
+git log --graph --decorate --pretty=oneline --abbrev-commmit --all
+```
+> Thanks you [Greg BACON](https://stackoverflow.com/a/2222920) → [Conrad PARKER](http://blog.kfish.org/2010/04/git-lola.html) → Scott CHACON
+
+<!-- -->
+
+&nbsp;
+
 Display the first commit of some user in current branch:
 
 ```sh
