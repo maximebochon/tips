@@ -74,6 +74,20 @@ ffmpeg -i video-with-audio.mp4 -vcodec copy -an video-without-audio.mp4
 
 &nbsp;
 
+:arrow_lower_right: Reencode video stream in H264 to optimize file size, keeping audio stream as is, using [FFmpeg](https://ffmpeg.org/):
+```sh
+# Reencode video only, using default video quality settings:
+ffmpeg -i video.mp4 -c:a copy default-quality-video-with-same-audio.mp4
+
+# As of 2025, the previous command, using default settings, should be equivalent to the following, more explicit, command:
+ffmpeg -i video.mp4 -c:a copy -c:v libx264 -preset medium -crf 23 default-quality-video-with-same-audio.mp4
+
+# Reencode video only, using slighlty higher quality settings, at the expense of time:
+ffmpeg -i video.mp4 -c:a copy -c:v libx264 -preset slow -crf 21 higher-quality-video-with-same-audio.mp4
+```
+
+&nbsp;
+
 :white_square_button: Extract a specific frame/image from a video as a PNG/JPEG file using [FFmpeg](https://ffmpeg.org/):
 ```sh
 # save frame as a lossless PNG file
