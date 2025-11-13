@@ -1,2 +1,6 @@
 name: ''
 title: null
+
+plugins:
+  # Render GitHub-flavored Markdown "text" emojis, like ":eyes:", ":smile:", ":-1:", etc.
+  - jemoji
