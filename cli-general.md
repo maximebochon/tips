@@ -189,3 +189,10 @@ crontab -e
 0    8 * * * bash -c "/opt/some-service.sh start"
 0   23 * * * bash -c "/opt/some-service.sh stop"
 ```
+
+&nbsp;
+
+:dash: Erase the content of a file:
+```sh
+truncate --size 0 file_to_erase
+```
