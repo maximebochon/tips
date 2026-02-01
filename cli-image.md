@@ -1,8 +1,9 @@
 # Command line image and document handling and processing tips
 
-:clock1: Timeshift by one hour [EXIF](https://en.wikipedia.org/wiki/Exif) dates of [JPEG](https://jpeg.org/jpeg/) pictures using [ExifTool](http://owl.phy.queensu.ca/~phil/exiftool/):
+:clock1: Timeshift all [EXIF](https://en.wikipedia.org/wiki/Exif) timestamps of [JPEG](https://jpeg.org/jpeg/) and [Canon RAW](https://www.canon-europe.com/pro/infobank/image-file-types/) pictures using [ExifTool](http://owl.phy.queensu.ca/~phil/exiftool/):
 ```sh
-exiftool "-AllDates+=0:0:0 1:0:0" *.jpg
+# Timeshift by 1 hour and 30 minutes
+exiftool "-AllDates+=0:0:0 1:30:0" -overwrite_original *.JPG *.CR2
 ```
 
 &nbsp;
