@@ -42,6 +42,15 @@ convert $input -resize ${width}x${height} $output
 
 &nbsp;
 
+🎗️ Convert an image from HEIF (_High Efficiency Image Format_) to [JPEG](https://jpeg.org/jpeg/) or [PNG](https://www.libpng.org/pub/png/) using [libheif](https://github.com/strukturag/libheif/blob/master/README.md):
+```sh
+# sudo apt install libheif-examples
+heif-convert input.heic output.jpg
+heif-convert input.heic output.png
+```
+
+&nbsp;
+
 :dollar: Convert an image of a piece of paper of known size to a [PDF](https://en.wikipedia.org/wiki/PDF) document of matching size using [ImageMagick](https://www.imagemagick.org/):
 ```sh
 # Suppose we know the paper height in inches, noted H_IN:
