@@ -92,6 +92,14 @@ git branch -D ${existing local branch}
 
 &nbsp;
 
+List local branches that are no longer on remote repository:
+
+```sh
+git branch --verbose | grep `\[gone\]'
+```
+
+&nbsp;
+
 Push new branch to remote repository:
 
 ```sh
