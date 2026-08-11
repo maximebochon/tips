@@ -3,6 +3,7 @@
 * Image/doc tips:
   - lossless JPEG cropping
   - lossless JPEG rotating (`jpegtran -rotate 90 -perfect input.jpg > output.jpg`)
+  - remove JPEG EXIF rotation information (`jhead -norot image.jpg`)
   - `convert -page A5 input.jpg output.pdf`
   - pdfsandwich
   - how to install jpegtran: `sudo apt install libjpeg-progs`
